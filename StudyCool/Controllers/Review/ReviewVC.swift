@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ReviewVC.swift
 //  StudyCool
 //
 //  Created by Sang on 9/24/20.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ReviewVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
 }
-

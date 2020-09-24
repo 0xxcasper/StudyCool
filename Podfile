@@ -6,5 +6,6 @@ target 'StudyCool' do
   use_frameworks!
 
   # Pods for StudyCool
-
+  pod 'SVProgressHUD'
+  
 end
