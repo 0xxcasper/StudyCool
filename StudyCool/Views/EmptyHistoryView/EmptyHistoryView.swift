@@ -22,7 +22,7 @@ class EmptyHistoryView: BaseViewXib {
     override func firstInit() {
         buttonStartLearn.touchUpInside { [self] in
             self.runAfterDelay(0.3) {
-                delegate?.onStartLearnPress()
+                self.delegate?.onStartLearnPress()
             }
         }
     }

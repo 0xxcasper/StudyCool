@@ -24,3 +24,13 @@ struct AppConstant {
     static let HEIGTH_TABBAR: CGFloat = 30 + STATUS_BAR_BOTTOM
 }
 
+let kEmpty                  = ""
+let kOK                     = "OK"
+
+
+//Mark: Firebase KEY
+let ID                      = "id"
+let USER                    = "Users"
+let NAME                    = "name"
+let EMAIL                   = "email"
+

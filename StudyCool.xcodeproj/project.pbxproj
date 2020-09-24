@@ -32,6 +32,15 @@
 		25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */; };
 		25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */; };
 		AC307554AD592C735D13CCB4 /* Pods_StudyCool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */; };
+		DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F88251CF20400553A60 /* RegisterViewController.xib */; };
+		DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F89251CF20400553A60 /* LoginViewController.xib */; };
+		DB2A3F8E251CF20400553A60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F8A251CF20400553A60 /* LoginViewController.swift */; };
+		DB2A3F8F251CF20400553A60 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F8B251CF20400553A60 /* RegisterViewController.swift */; };
+		DB2A3F92251CF2FA00553A60 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F91251CF2FA00553A60 /* AppRouter.swift */; };
+		DB2A3F94251CF77F00553A60 /* PopUpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F93251CF77F00553A60 /* PopUpHelper.swift */; };
+		DB2A3F96251CF9C000553A60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */; };
+		DB2A3F99251CFAD700553A60 /* UserAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F98251CFAD700553A60 /* UserAuthViewModel.swift */; };
+		DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F9A251CFB2100553A60 /* Firebase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +72,15 @@
 		25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyHistoryView.xib; sourceTree = "<group>"; };
 		B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.release.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.release.xcconfig"; sourceTree = "<group>"; };
 		CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2A3F88251CF20400553A60 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		DB2A3F89251CF20400553A60 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DB2A3F8A251CF20400553A60 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DB2A3F8B251CF20400553A60 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DB2A3F91251CF2FA00553A60 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		DB2A3F93251CF77F00553A60 /* PopUpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpHelper.swift; sourceTree = "<group>"; };
+		DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB2A3F98251CFAD700553A60 /* UserAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewModel.swift; sourceTree = "<group>"; };
+		DB2A3F9A251CFB2100553A60 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.debug.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				25477176251C4E1100C1F4CD /* AppDelegate.swift */,
+				DB2A3F97251CFAC200553A60 /* ViewModel */,
+				DB2A3F90251CF2D900553A60 /* Utilities */,
 				25911BEE251C55AE00B52872 /* Constants */,
 				25911BF0251C55AE00B52872 /* Extension */,
 				25911BFB251C55AF00B52872 /* Helper */,
@@ -127,6 +147,7 @@
 				2547717F251C4E1300C1F4CD /* Assets.xcassets */,
 				25477181251C4E1300C1F4CD /* LaunchScreen.storyboard */,
 				25477184251C4E1300C1F4CD /* Info.plist */,
+				DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */,
 			);
 			path = StudyCool;
 			sourceTree = "<group>";
@@ -182,6 +203,7 @@
 		25911C0D251C563000B52872 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DB2A3F87251CF20400553A60 /* Authentic */,
 				2507CB4E251C8F9E00B0D28E /* Account */,
 				25911C21251C5CF900B52872 /* Study */,
 				25911C0E251C565300B52872 /* Review */,
@@ -222,6 +244,35 @@
 				25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */,
 			);
 			path = EmptyHistoryView;
+			sourceTree = "<group>";
+		};
+		DB2A3F87251CF20400553A60 /* Authentic */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A3F8A251CF20400553A60 /* LoginViewController.swift */,
+				DB2A3F89251CF20400553A60 /* LoginViewController.xib */,
+				DB2A3F8B251CF20400553A60 /* RegisterViewController.swift */,
+				DB2A3F88251CF20400553A60 /* RegisterViewController.xib */,
+			);
+			path = Authentic;
+			sourceTree = "<group>";
+		};
+		DB2A3F90251CF2D900553A60 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A3F91251CF2FA00553A60 /* AppRouter.swift */,
+				DB2A3F93251CF77F00553A60 /* PopUpHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DB2A3F97251CFAC200553A60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A3F98251CFAD700553A60 /* UserAuthViewModel.swift */,
+				DB2A3F9A251CFB2100553A60 /* Firebase.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FE80BB3308857DACB1BE1A91 /* Pods */ = {
@@ -292,8 +343,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */,
 				25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */,
+				DB2A3F96251CF9C000553A60 /* GoogleService-Info.plist in Resources */,
 				25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */,
+				DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */,
 				25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */,
 				25911C25251C5D1100B52872 /* StudyVC.xib in Resources */,
 				2507CB52251C8FB300B0D28E /* AccountVC.xib in Resources */,
@@ -351,18 +405,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				2507CB51251C8FB300B0D28E /* AccountVC.swift in Sources */,
+				DB2A3F99251CFAD700553A60 /* UserAuthViewModel.swift in Sources */,
 				25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */,
 				25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */,
 				25911C02251C55AF00B52872 /* String+Extensions.swift in Sources */,
+				DB2A3F8E251CF20400553A60 /* LoginViewController.swift in Sources */,
 				25911C1D251C5AF500B52872 /* ReviewVC.swift in Sources */,
 				25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */,
 				25911C0B251C55AF00B52872 /* UseDefaultHelper.swift in Sources */,
 				25911C24251C5D1100B52872 /* StudyVC.swift in Sources */,
+				DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */,
 				25911C09251C55AF00B52872 /* LanguageHelper.swift in Sources */,
 				25911C03251C55AF00B52872 /* UITableView+Extensions.swift in Sources */,
+				DB2A3F92251CF2FA00553A60 /* AppRouter.swift in Sources */,
+				DB2A3F8F251CF20400553A60 /* RegisterViewController.swift in Sources */,
 				25911C05251C55AF00B52872 /* MainTabbar.swift in Sources */,
 				25477177251C4E1100C1F4CD /* AppDelegate.swift in Sources */,
 				25911C0A251C55AF00B52872 /* JsonHelper.swift in Sources */,
+				DB2A3F94251CF77F00553A60 /* PopUpHelper.swift in Sources */,
 				25911C04251C55AF00B52872 /* BaseViewController.swift in Sources */,
 				25911C00251C55AF00B52872 /* UIView+Extensions.swift in Sources */,
 				25911C08251C55AF00B52872 /* BaseViewXib.swift in Sources */,
@@ -436,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -491,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
