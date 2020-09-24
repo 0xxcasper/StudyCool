@@ -20,6 +20,11 @@ class BaseViewXib: UIView {
         print(str)
     }
     
+    func runAfterDelay(_ delay: TimeInterval, block: @escaping ()->()) {
+        let time = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: time, execute: block)
+    }
+    
     
     private func setupXib() {
         view = loadViewFromNib()
