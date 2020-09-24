@@ -28,6 +28,9 @@
 		25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25911C1C251C5AF500B52872 /* ReviewVC.xib */; };
 		25911C24251C5D1100B52872 /* StudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25911C22251C5D1100B52872 /* StudyVC.swift */; };
 		25911C25251C5D1100B52872 /* StudyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25911C23251C5D1100B52872 /* StudyVC.xib */; };
+		25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */; };
+		25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */; };
+		25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */; };
 		AC307554AD592C735D13CCB4 /* Pods_StudyCool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		25911C1C251C5AF500B52872 /* ReviewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewVC.xib; sourceTree = "<group>"; };
 		25911C22251C5D1100B52872 /* StudyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyVC.swift; sourceTree = "<group>"; };
 		25911C23251C5D1100B52872 /* StudyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyVC.xib; sourceTree = "<group>"; };
+		25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
+		25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHistoryView.swift; sourceTree = "<group>"; };
+		25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyHistoryView.xib; sourceTree = "<group>"; };
 		B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.release.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.release.xcconfig"; sourceTree = "<group>"; };
 		CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.debug.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 				25911BF0251C55AE00B52872 /* Extension */,
 				25911BFB251C55AF00B52872 /* Helper */,
 				25911BE3251C556D00B52872 /* Components */,
+				25BECCA1251C9FC4004D57CC /* Views */,
 				25911C0D251C563000B52872 /* Controllers */,
 				25477178251C4E1100C1F4CD /* SceneDelegate.swift */,
 				2547717F251C4E1300C1F4CD /* Assets.xcassets */,
@@ -128,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				25911BF5251C55AE00B52872 /* Base */,
+				25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -199,6 +207,23 @@
 			path = Study;
 			sourceTree = "<group>";
 		};
+		25BECCA1251C9FC4004D57CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25BECCAA251CA277004D57CC /* EmptyHistoryView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25BECCAA251CA277004D57CC /* EmptyHistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */,
+				25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */,
+			);
+			path = EmptyHistoryView;
+			sourceTree = "<group>";
+		};
 		FE80BB3308857DACB1BE1A91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */,
+				25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */,
 				25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */,
 				25911C25251C5D1100B52872 /* StudyVC.xib in Resources */,
 				2507CB52251C8FB300B0D28E /* AccountVC.xib in Resources */,
@@ -325,9 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2507CB51251C8FB300B0D28E /* AccountVC.swift in Sources */,
+				25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */,
 				25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */,
 				25911C02251C55AF00B52872 /* String+Extensions.swift in Sources */,
 				25911C1D251C5AF500B52872 /* ReviewVC.swift in Sources */,
+				25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */,
 				25911C0B251C55AF00B52872 /* UseDefaultHelper.swift in Sources */,
 				25911C24251C5D1100B52872 /* StudyVC.swift in Sources */,
 				25911C09251C55AF00B52872 /* LanguageHelper.swift in Sources */,
