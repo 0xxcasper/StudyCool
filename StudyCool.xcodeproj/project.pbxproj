@@ -13,6 +13,7 @@
 		2547717E251C4E1100C1F4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2547717C251C4E1100C1F4CD /* Main.storyboard */; };
 		25477180251C4E1300C1F4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2547717F251C4E1300C1F4CD /* Assets.xcassets */; };
 		25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25477181251C4E1300C1F4CD /* LaunchScreen.storyboard */; };
+		AC307554AD592C735D13CCB4 /* Pods_StudyCool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2547717F251C4E1300C1F4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25477182251C4E1300C1F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25477184251C4E1300C1F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.release.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.release.xcconfig"; sourceTree = "<group>"; };
+		CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.debug.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC307554AD592C735D13CCB4 /* Pods_StudyCool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20198C50AB5C904E0A6C7C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2547716A251C4E1100C1F4CD = {
 			isa = PBXGroup;
 			children = (
 				25477175251C4E1100C1F4CD /* StudyCool */,
 				25477174251C4E1100C1F4CD /* Products */,
+				FE80BB3308857DACB1BE1A91 /* Pods */,
+				20198C50AB5C904E0A6C7C57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = StudyCool;
 			sourceTree = "<group>";
 		};
+		FE80BB3308857DACB1BE1A91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */,
+				B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25477187251C4E1300C1F4CD /* Build configuration list for PBXNativeTarget "StudyCool" */;
 			buildPhases = (
+				3107562FB571DADC53512518 /* [CP] Check Pods Manifest.lock */,
 				2547716F251C4E1100C1F4CD /* Sources */,
 				25477170251C4E1100C1F4CD /* Frameworks */,
 				25477171251C4E1100C1F4CD /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3107562FB571DADC53512518 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyCool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2547716F251C4E1100C1F4CD /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		25477188251C4E1300C1F4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +353,7 @@
 		};
 		25477189251C4E1300C1F4CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
