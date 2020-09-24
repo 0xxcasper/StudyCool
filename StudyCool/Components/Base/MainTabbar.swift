@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import BubbleTabBar
 
-class MainTabbar: UITabBarController {
+class MainTabbar: BubbleTabBarController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -33,27 +34,27 @@ class MainTabbar: UITabBarController {
 
         let reviewVC = ReviewVC()
         let reviewNC = BaseNavigationController(rootViewController: reviewVC)
+        reviewNC.tabBarItem = CBTabBarItem(title: "Ôn tập từ vựng", image: #imageLiteral(resourceName: "gym"), tag: 0)
         reviewNC.navigationBar.prefersLargeTitles = true
         
         let studyVC = StudyVC()
         let studyNC = BaseNavigationController(rootViewController: studyVC)
+        studyVC.tabBarItem = UITabBarItem(title: "Học từ vựng", image: #imageLiteral(resourceName: "learn"), tag: 1)
         studyNC.navigationBar.prefersLargeTitles = true
         
-        viewControllers = [ reviewNC, studyNC ]
+        let accountVC = AccountVC()
+        let accountNC = BaseNavigationController(rootViewController: accountVC)
+        accountVC.tabBarItem = UITabBarItem(title: "Thông tin tài khoản", image: #imageLiteral(resourceName: "user"), tag: 2)
+        accountNC.navigationBar.prefersLargeTitles = true
+        
+        viewControllers = [ reviewNC, studyNC, accountNC ]
     }
+
 }
 
 class BaseNavigationController : UINavigationController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
-        interactivePopGestureRecognizer?.isEnabled = true
-        interactivePopGestureRecognizer?.delegate = self
-
-        self.navigationBar.isTranslucent = true
-        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.tintColor = .white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
 
     }
 

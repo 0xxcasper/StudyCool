@@ -7,5 +7,5 @@ target 'StudyCool' do
 
   # Pods for StudyCool
   pod 'SVProgressHUD'
-  
+  pod 'BubbleTabBar'
 end

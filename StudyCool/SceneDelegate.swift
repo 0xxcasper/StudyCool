@@ -19,10 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         self.window = UIWindow(windowScene: windowScene)
-
-        // Root is HomeVC
         let rootNC = UINavigationController(rootViewController: MainTabbar())
-        self.window?.rootViewController = rootNC
+        rootNC.setNavigationBarHidden(true, animated: true)
         self.window?.makeKeyAndVisible()
     }
 
