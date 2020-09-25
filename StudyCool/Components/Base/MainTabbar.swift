@@ -55,11 +55,6 @@ class MainTabbar: BubbleTabBarController {
 class BaseNavigationController : UINavigationController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
-
-    }
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
 
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {

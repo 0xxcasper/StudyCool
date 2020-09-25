@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnRegister: UIButton!
     
-//    private var viewModel = UserAuthViewModel()
+    private var viewModel = UserAuthViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func handleLogin(_ sender: UIButton) {
         txfPassword.resignFirstResponder()
-//        viewModel.signIn(self)
+        viewModel.signIn(self)
     }
     
     @IBAction func handleGotoRegister(_ sender: UIButton) {
@@ -50,9 +50,9 @@ extension LoginViewController:UITextFieldDelegate
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         if textField == txfEmail {
-//            viewModel.emailString = txfEmail.text!
+            viewModel.emailString = txfEmail.text!
         } else {
-//            viewModel.passString = txfPassword.text!
+            viewModel.passString = txfPassword.text!
         }
         return true
     }

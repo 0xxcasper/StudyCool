@@ -14,7 +14,6 @@ class AppRouter {
     static let shared = AppRouter()
     
     func openHome() {
-
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate, let appWindow = appDelegate.window else { return }
         let rootNC = UINavigationController(rootViewController: MainTabbar())
         rootNC.setNavigationBarHidden(true, animated: true)
