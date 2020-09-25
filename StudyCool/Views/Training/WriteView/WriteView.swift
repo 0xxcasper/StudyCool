@@ -12,8 +12,12 @@ class WriteView: BaseViewXib {
     
     @IBOutlet weak var collectionAnswerView: UICollectionView!
     @IBOutlet weak var collectionTypeView: UICollectionView!
+    @IBOutlet weak var boxAnswer: UIImageView!
+    @IBOutlet weak var boxType: UIImageView!
+    @IBOutlet weak var blurTitle: UIVisualEffectView!
+    @IBOutlet weak var blurSubTitle: UIVisualEffectView!
     
-    var words: Array<String> = ["a", "b", "c", "d", "e", "f", "g", "h"] {
+    var words: Array<String> = ["a", "b", "c", "d", "e", "f", "g", "h", ] {
         didSet {
             collectionTypeView.reloadData()
         }
@@ -26,6 +30,35 @@ class WriteView: BaseViewXib {
     }
 
     override func firstInit() {
+        setupView()
+    }
+    
+    func setupView() {
+        setupHeader()
+        setupBox()
+        setupCollectionView()
+    }
+    
+    func setupHeader() {
+        blurTitle.layer.cornerRadius = 8
+        blurTitle.layer.masksToBounds = true
+        
+        blurSubTitle.layer.cornerRadius = 8
+        blurSubTitle.layer.masksToBounds = true
+    }
+    
+    func setupBox() {
+        addShadow(view: boxAnswer)
+        addShadow(view: boxType)
+    }
+    
+    func addShadow(view: UIImageView) {
+//        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        view.layer.cornerRadius = 10
+        view.setShadow(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), offSet: CGSize(width: 1, height: 1), radius: 8)
+    }
+    
+    func setupCollectionView() {
         collectionAnswerView.registerXibFile(WordCell.self)
         collectionAnswerView.dataSource = self
         collectionAnswerView.delegate = self
@@ -34,7 +67,6 @@ class WriteView: BaseViewXib {
         collectionTypeView.dataSource = self
         collectionTypeView.delegate = self
     }
-    
 }
 
 extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -46,7 +78,6 @@ extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(WordCell.self, for: indexPath)
         cell.lblWord.text = collectionView === collectionAnswerView ? wordAnwers[indexPath.row] : words[indexPath.row]
-        cell.backgroundColor = collectionView === collectionAnswerView ? .white : .cyan
         return cell
     }
     
@@ -56,7 +87,7 @@ extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 16)
+        return UIEdgeInsets(top: 10, left: 5, bottom: 5, right: 5)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

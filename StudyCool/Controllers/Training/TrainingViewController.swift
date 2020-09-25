@@ -21,12 +21,12 @@ class TrainingViewController: BaseViewController {
         setUpView()
     }
     
-    private func setUpView() {
-        progressView.layer.cornerRadius = 10
-        progressView.transform = progressView.transform.scaledBy(x: 1, y: 8)
-        
+    private func setUpView() {   
+        progressView.layer.cornerRadius = 8
+        progressView.transform = progressView.transform.scaledBy(x: 1, y: 2)
         vLearn.isHidden = true
         vListern.isHidden = true
+        vWrite.isHidden = false
     }
 
 }
