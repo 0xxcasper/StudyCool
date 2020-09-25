@@ -31,6 +31,17 @@
 		25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */; };
 		25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */; };
 		25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */; };
+		849B2801251D9F3C0045D15D /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B27FF251D9F3C0045D15D /* TrainingViewController.swift */; };
+		849B2802251D9F3C0045D15D /* TrainingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B2800251D9F3C0045D15D /* TrainingViewController.xib */; };
+		849B280B251DAB080045D15D /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B280A251DAB080045D15D /* LearnView.swift */; };
+		849B280E251DAB160045D15D /* LearnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B280D251DAB160045D15D /* LearnView.xib */; };
+		849B2811251DC0310045D15D /* ListernView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B2810251DC0310045D15D /* ListernView.swift */; };
+		849B2814251DC03E0045D15D /* ListernView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B2813251DC03E0045D15D /* ListernView.xib */; };
+		849B2817251DC4800045D15D /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B2816251DC4800045D15D /* WriteView.swift */; };
+		849B281A251DC48B0045D15D /* WriteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B2819251DC48B0045D15D /* WriteView.xib */; };
+		849B281F251DC9590045D15D /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B281D251DC9590045D15D /* WordCell.swift */; };
+		849B2820251DC9590045D15D /* WordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B281E251DC9590045D15D /* WordCell.xib */; };
+		849B283C251DCA860045D15D /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B283B251DCA860045D15D /* UICollectionView+Extensions.swift */; };
 		AC307554AD592C735D13CCB4 /* Pods_StudyCool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */; };
 		DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F88251CF20400553A60 /* RegisterViewController.xib */; };
 		DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F89251CF20400553A60 /* LoginViewController.xib */; };
@@ -70,6 +81,17 @@
 		25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
 		25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHistoryView.swift; sourceTree = "<group>"; };
 		25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyHistoryView.xib; sourceTree = "<group>"; };
+		849B27FF251D9F3C0045D15D /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		849B2800251D9F3C0045D15D /* TrainingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingViewController.xib; sourceTree = "<group>"; };
+		849B280A251DAB080045D15D /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		849B280D251DAB160045D15D /* LearnView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearnView.xib; sourceTree = "<group>"; };
+		849B2810251DC0310045D15D /* ListernView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListernView.swift; sourceTree = "<group>"; };
+		849B2813251DC03E0045D15D /* ListernView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListernView.xib; sourceTree = "<group>"; };
+		849B2816251DC4800045D15D /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		849B2819251DC48B0045D15D /* WriteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteView.xib; sourceTree = "<group>"; };
+		849B281D251DC9590045D15D /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		849B281E251DC9590045D15D /* WordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCell.xib; sourceTree = "<group>"; };
+		849B283B251DCA860045D15D /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.release.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.release.xcconfig"; sourceTree = "<group>"; };
 		CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2A3F88251CF20400553A60 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +198,7 @@
 				25911BF2251C55AE00B52872 /* Bundle+Extention.swift */,
 				25911BF3251C55AE00B52872 /* String+Extensions.swift */,
 				25911BF4251C55AE00B52872 /* UITableView+Extensions.swift */,
+				849B283B251DCA860045D15D /* UICollectionView+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -203,6 +226,7 @@
 		25911C0D251C563000B52872 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				849B27FE251D9F0C0045D15D /* Training */,
 				DB2A3F87251CF20400553A60 /* Authentic */,
 				2507CB4E251C8F9E00B0D28E /* Account */,
 				25911C21251C5CF900B52872 /* Study */,
@@ -232,6 +256,7 @@
 		25BECCA1251C9FC4004D57CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				849B2805251DA7150045D15D /* Training */,
 				25BECCAA251CA277004D57CC /* EmptyHistoryView */,
 			);
 			path = Views;
@@ -244,6 +269,62 @@
 				25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */,
 			);
 			path = EmptyHistoryView;
+			sourceTree = "<group>";
+		};
+		849B27FE251D9F0C0045D15D /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				849B27FF251D9F3C0045D15D /* TrainingViewController.swift */,
+				849B2800251D9F3C0045D15D /* TrainingViewController.xib */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		849B2805251DA7150045D15D /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				849B2808251DA73E0045D15D /* WriteView */,
+				849B2807251DA7280045D15D /* ListernView */,
+				849B2806251DA71C0045D15D /* LearnView */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		849B2806251DA71C0045D15D /* LearnView */ = {
+			isa = PBXGroup;
+			children = (
+				849B280A251DAB080045D15D /* LearnView.swift */,
+				849B280D251DAB160045D15D /* LearnView.xib */,
+			);
+			path = LearnView;
+			sourceTree = "<group>";
+		};
+		849B2807251DA7280045D15D /* ListernView */ = {
+			isa = PBXGroup;
+			children = (
+				849B2810251DC0310045D15D /* ListernView.swift */,
+				849B2813251DC03E0045D15D /* ListernView.xib */,
+			);
+			path = ListernView;
+			sourceTree = "<group>";
+		};
+		849B2808251DA73E0045D15D /* WriteView */ = {
+			isa = PBXGroup;
+			children = (
+				849B281C251DC8FC0045D15D /* Cell */,
+				849B2816251DC4800045D15D /* WriteView.swift */,
+				849B2819251DC48B0045D15D /* WriteView.xib */,
+			);
+			path = WriteView;
+			sourceTree = "<group>";
+		};
+		849B281C251DC8FC0045D15D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				849B281D251DC9590045D15D /* WordCell.swift */,
+				849B281E251DC9590045D15D /* WordCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		DB2A3F87251CF20400553A60 /* Authentic */ = {
@@ -346,9 +427,14 @@
 				DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */,
 				25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */,
 				DB2A3F96251CF9C000553A60 /* GoogleService-Info.plist in Resources */,
+				849B280E251DAB160045D15D /* LearnView.xib in Resources */,
 				25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */,
+				849B2820251DC9590045D15D /* WordCell.xib in Resources */,
+				849B2802251D9F3C0045D15D /* TrainingViewController.xib in Resources */,
 				DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */,
 				25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */,
+				849B281A251DC48B0045D15D /* WriteView.xib in Resources */,
+				849B2814251DC03E0045D15D /* ListernView.xib in Resources */,
 				25911C25251C5D1100B52872 /* StudyVC.xib in Resources */,
 				2507CB52251C8FB300B0D28E /* AccountVC.xib in Resources */,
 				25477180251C4E1300C1F4CD /* Assets.xcassets in Resources */,
@@ -405,6 +491,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2507CB51251C8FB300B0D28E /* AccountVC.swift in Sources */,
+				849B2811251DC0310045D15D /* ListernView.swift in Sources */,
+				849B283C251DCA860045D15D /* UICollectionView+Extensions.swift in Sources */,
 				DB2A3F99251CFAD700553A60 /* UserAuthViewModel.swift in Sources */,
 				25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */,
 				25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */,
@@ -414,18 +502,22 @@
 				25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */,
 				25911C0B251C55AF00B52872 /* UseDefaultHelper.swift in Sources */,
 				25911C24251C5D1100B52872 /* StudyVC.swift in Sources */,
+				849B2801251D9F3C0045D15D /* TrainingViewController.swift in Sources */,
 				DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */,
 				25911C09251C55AF00B52872 /* LanguageHelper.swift in Sources */,
+				849B281F251DC9590045D15D /* WordCell.swift in Sources */,
 				25911C03251C55AF00B52872 /* UITableView+Extensions.swift in Sources */,
 				DB2A3F92251CF2FA00553A60 /* AppRouter.swift in Sources */,
 				DB2A3F8F251CF20400553A60 /* RegisterViewController.swift in Sources */,
 				25911C05251C55AF00B52872 /* MainTabbar.swift in Sources */,
 				25477177251C4E1100C1F4CD /* AppDelegate.swift in Sources */,
 				25911C0A251C55AF00B52872 /* JsonHelper.swift in Sources */,
+				849B2817251DC4800045D15D /* WriteView.swift in Sources */,
 				DB2A3F94251CF77F00553A60 /* PopUpHelper.swift in Sources */,
 				25911C04251C55AF00B52872 /* BaseViewController.swift in Sources */,
 				25911C00251C55AF00B52872 /* UIView+Extensions.swift in Sources */,
 				25911C08251C55AF00B52872 /* BaseViewXib.swift in Sources */,
+				849B280B251DAB080045D15D /* LearnView.swift in Sources */,
 				25477179251C4E1100C1F4CD /* SceneDelegate.swift in Sources */,
 				25911BFF251C55AF00B52872 /* AppConstant.swift in Sources */,
 			);

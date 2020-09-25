@@ -11,6 +11,12 @@ class StudyVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    // TODO: remove later
+    @IBAction func onPress(_ sender: UIButton) {
+        self.present(controller: TrainingViewController())
     }
     
     override func viewWillAppear(_ animated: Bool) {

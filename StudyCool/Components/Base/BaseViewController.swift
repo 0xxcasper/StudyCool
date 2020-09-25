@@ -35,6 +35,7 @@ extension BaseViewController {
     }
 
     func present(controller: UIViewController, animated: Bool = true) {
+        controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: animated, completion: nil)
     }
 

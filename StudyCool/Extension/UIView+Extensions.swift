@@ -234,6 +234,11 @@ extension UIView {
         self.layer.borderWidth = width
         self.layer.borderColor = color.cgColor
     }
+    
+    func setViewCorner(radius: CGFloat = 1, color: UIColor = .black) {
+        self.layer.cornerRadius = radius
+        self.clipsToBounds = true
+    }
 }
 
 extension UIView {

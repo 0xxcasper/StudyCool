@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrainingViewController" customModule="StudyCool" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="0Mu-qB-ECy" id="BWM-Mu-4Ng"/>
+                <outlet property="vLearn" destination="kSg-YH-ice" id="1Ex-nX-Mps"/>
+                <outlet property="vListern" destination="QPE-ub-MUg" id="h2w-lB-KU4"/>
+                <outlet property="vWrite" destination="sA7-Hq-0jl" id="Z6D-wK-Lmb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sA7-Hq-0jl" customClass="WriteView" customModule="StudyCool" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="40" width="375" height="477"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="0Mu-qB-ECy">
+                    <rect key="frame" x="50" y="16" width="275" height="4"/>
+                    <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </progressView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSg-YH-ice" customClass="LearnView" customModule="StudyCool" customModuleProvider="target">
+                    <rect key="frame" x="30" y="40" width="315" height="377"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPE-ub-MUg" customClass="ListernView" customModule="StudyCool" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="40" width="375" height="377"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZG-AH-vh1" customClass="PMSuperButton" customModule="StudyCool" customModuleProvider="target">
+                    <rect key="frame" x="37.5" y="562" width="300" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="0am-gS-BGB"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="2OS-rG-UBh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="CiG-FE-vQl"/>
+                        <constraint firstAttribute="height" constant="55" id="VNA-6F-lwj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="KIỂM TRA">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="26"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="animatedScaleWhenHighlighted">
+                            <real key="value" value="0.69999999999999996"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                            <color key="value" red="0.76470588240000004" green="0.61176470589999998" blue="0.92156862750000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                            <color key="value" red="0.54901960780000003" green="0.54117647059999996" blue="0.86274509799999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kSg-YH-ice" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="9d4-33-tm3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sA7-Hq-0jl" secondAttribute="bottom" constant="150" id="F38-rb-86d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kSg-YH-ice" secondAttribute="trailing" constant="30" id="KvD-H0-zhI"/>
+                <constraint firstItem="QPE-ub-MUg" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="QTq-jD-Jlv"/>
+                <constraint firstItem="sA7-Hq-0jl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UjQ-ZN-CTz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hZG-AH-vh1" secondAttribute="bottom" constant="50" id="Viy-TQ-81S"/>
+                <constraint firstItem="0Mu-qB-ECy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="bdf-5r-2gp"/>
+                <constraint firstItem="0Mu-qB-ECy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eOl-Av-ssj"/>
+                <constraint firstItem="kSg-YH-ice" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="f4h-G4-rsr"/>
+                <constraint firstItem="0Mu-qB-ECy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="ipl-14-pda"/>
+                <constraint firstItem="sA7-Hq-0jl" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="irs-DD-NkR"/>
+                <constraint firstItem="hZG-AH-vh1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jgm-Qy-SsJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sA7-Hq-0jl" secondAttribute="trailing" id="ml9-NH-5ZP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QPE-ub-MUg" secondAttribute="trailing" id="n7o-zD-EhE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QPE-ub-MUg" secondAttribute="bottom" constant="250" id="rC5-6r-AxB"/>
+                <constraint firstItem="QPE-ub-MUg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sSx-dE-EnY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kSg-YH-ice" secondAttribute="bottom" constant="250" id="tYb-Iw-Zcb"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="108.39580209895054"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="hZG-AH-vh1">
+            <size key="intrinsicContentSize" width="105" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
