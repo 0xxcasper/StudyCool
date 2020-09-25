@@ -39,7 +39,8 @@ class AccountVC: BaseViewController {
     //Mark: Action
     func handleSignoutAction() {
         buttonLogout.touchUpInside {
-            let alertView = SCLAlertView()
+            let appearance = SCLAlertView.SCLAppearance(kWindowWidth: AppConstant.SREEEN_WIDTH * 0.8, kButtonHeight: 40)
+            let alertView = SCLAlertView(appearance: appearance)
             alertView.addButton(kAccept, backgroundColor: #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) {
                 Firebase.shared.signOut()
             }
