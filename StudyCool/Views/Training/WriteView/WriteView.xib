@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WriteView" customModule="StudyCool" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionAnswerView" destination="Ik7-8t-P2l" id="aWO-yH-h0C"/>
+                <outlet property="collectionTypeView" destination="SmL-Ey-Bh0" id="5kA-jF-T8h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghép từ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIw-jT-PIr">
+                    <rect key="frame" x="162.5" y="20" width="89" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Học sinh, sinh viên (n)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-ee-f4U">
+                    <rect key="frame" x="73.5" y="80" width="267.5" height="33"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ik7-8t-P2l">
+                    <rect key="frame" x="16" y="133" width="382" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="2YM-Fo-Wvs"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yao-aA-Q7c">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-Ey-Bh0">
+                    <rect key="frame" x="16" y="293" width="382" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mjm-k0-coJ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SmL-Ey-Bh0" firstAttribute="leading" secondItem="Ik7-8t-P2l" secondAttribute="leading" id="3B8-5u-jG6"/>
+                <constraint firstItem="SmL-Ey-Bh0" firstAttribute="top" secondItem="Ik7-8t-P2l" secondAttribute="bottom" constant="40" id="DLt-O0-ltA"/>
+                <constraint firstItem="Ik7-8t-P2l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="L3T-Ho-72a"/>
+                <constraint firstItem="SmL-Ey-Bh0" firstAttribute="centerX" secondItem="Ik7-8t-P2l" secondAttribute="centerX" id="S15-Sg-z6E"/>
+                <constraint firstItem="OIw-jT-PIr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="huz-Q1-jNC"/>
+                <constraint firstItem="HTV-ee-f4U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kfu-pw-5uB"/>
+                <constraint firstAttribute="trailing" secondItem="Ik7-8t-P2l" secondAttribute="trailing" constant="16" id="l39-h0-qXE"/>
+                <constraint firstItem="OIw-jT-PIr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lo6-Bf-5e8"/>
+                <constraint firstItem="SmL-Ey-Bh0" firstAttribute="height" secondItem="Ik7-8t-P2l" secondAttribute="height" id="lpp-e9-F0U"/>
+                <constraint firstItem="Ik7-8t-P2l" firstAttribute="top" secondItem="HTV-ee-f4U" secondAttribute="bottom" constant="20" id="thU-jl-SxF"/>
+                <constraint firstItem="HTV-ee-f4U" firstAttribute="top" secondItem="OIw-jT-PIr" secondAttribute="bottom" constant="30" id="u3E-dd-F5i"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="190" y="10"/>
+        </view>
+    </objects>
+</document>
