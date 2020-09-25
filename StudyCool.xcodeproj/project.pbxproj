@@ -58,6 +58,9 @@
 		DB2A3F96251CF9C000553A60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */; };
 		DB2A3F99251CFAD700553A60 /* UserAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F98251CFAD700553A60 /* UserAuthViewModel.swift */; };
 		DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F9A251CFB2100553A60 /* Firebase.swift */; };
+		DB2A3F9E251E482F00553A60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F9D251E482F00553A60 /* UserModel.swift */; };
+		DB2A3FA2251E528D00553A60 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3FA0251E528D00553A60 /* Reachability.swift */; };
+		DB2A3FA4251E52B000553A60 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3FA3251E52B000553A60 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +118,10 @@
 		DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB2A3F98251CFAD700553A60 /* UserAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewModel.swift; sourceTree = "<group>"; };
 		DB2A3F9A251CFB2100553A60 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		DB2A3F9D251E482F00553A60 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DB2A3FA0251E528D00553A60 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DB2A3FA1251E528D00553A60 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DB2A3FA3251E52B000553A60 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.debug.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				25477176251C4E1100C1F4CD /* AppDelegate.swift */,
+				DB2A3F9C251E481A00553A60 /* Models */,
 				DB2A3F97251CFAC200553A60 /* ViewModel */,
 				DB2A3F90251CF2D900553A60 /* Utilities */,
 				25911BEE251C55AE00B52872 /* Constants */,
@@ -247,9 +255,11 @@
 		25911BFB251C55AF00B52872 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				DB2A3F9F251E526200553A60 /* Network */,
 				25911BFC251C55AF00B52872 /* LanguageHelper.swift */,
 				25911BFD251C55AF00B52872 /* JsonHelper.swift */,
 				25911BFE251C55AF00B52872 /* UseDefaultHelper.swift */,
+				DB2A3FA3251E52B000553A60 /* ConnectionManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -398,6 +408,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DB2A3F9C251E481A00553A60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A3F9D251E482F00553A60 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB2A3F9F251E526200553A60 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A3FA1251E528D00553A60 /* Reachability.h */,
+				DB2A3FA0251E528D00553A60 /* Reachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FE80BB3308857DACB1BE1A91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,11 +569,14 @@
 				255797B9251DD19B00FBC245 /* SCLExtensions.swift in Sources */,
 				25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */,
 				25911C02251C55AF00B52872 /* String+Extensions.swift in Sources */,
+				DB2A3F9E251E482F00553A60 /* UserModel.swift in Sources */,
 				DB2A3F8E251CF20400553A60 /* LoginViewController.swift in Sources */,
 				25911C1D251C5AF500B52872 /* ReviewVC.swift in Sources */,
 				25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */,
+				DB2A3FA4251E52B000553A60 /* ConnectionManager.swift in Sources */,
 				25911C0B251C55AF00B52872 /* UseDefaultHelper.swift in Sources */,
 				25911C24251C5D1100B52872 /* StudyVC.swift in Sources */,
+				DB2A3FA2251E528D00553A60 /* Reachability.swift in Sources */,
 				849B2801251D9F3C0045D15D /* TrainingViewController.swift in Sources */,
 				2557979E251DB09500FBC245 /* HeaderNavigator.swift in Sources */,
 				DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */,

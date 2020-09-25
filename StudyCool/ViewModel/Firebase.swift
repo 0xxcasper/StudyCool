@@ -53,5 +53,17 @@ struct Firebase {
             SVProgressHUD.showError(withStatus: error.localizedDescription)
         }
     }
-}
+    
+    func getDataUser(_ completion: @escaping ((UserModel?)->())) {
+        guard let currentId = Auth.auth().currentUser?.uid else { return }
+        let ref = Database.database().reference().child(USER).child(currentId)
+        ref.observeSingleEvent(of: .value) { (DataSnapshot) in
+            if let data = DataSnapshot.value as? [String:AnyObject] {
+                let user = UserModel(data)
+                completion(user)
+            } else {
+                completion(nil)
+            }
+        }
+    }}
 

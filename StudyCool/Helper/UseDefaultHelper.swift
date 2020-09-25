@@ -7,33 +7,51 @@
 //
 
 import Foundation
+import UIKit
 
 private enum UserDefaultHelperKey: String {
-    case regionCode = "regionCode"
+    case user = "user"
 }
 
 class UserDefaultHelper {
     static let shared = UserDefaultHelper()
     private let userDefaultManager = UserDefaults.standard
 
-    var regionCode: String? {
+    var userInfo: UserModel? {
         get {
-            let value = get(key: .regionCode) as? String
-            return value
+            guard let user = get(key: .user) as? UserModel else { return nil }
+            return user
         }
-        set(regionCode) {
-            save(value: regionCode, key: .regionCode)
+        set(userInfo) {
+            save(value: userInfo, key: .user)
         }
     }
 }
 
 extension UserDefaultHelper {
     private func save(value: Any?, key: UserDefaultHelperKey) {
-        userDefaultManager.set(value, forKey: key.rawValue)
-        userDefaultManager.synchronize()
+        if let _data = value {
+            do {
+                let data = try NSKeyedArchiver.archivedData(withRootObject: _data, requiringSecureCoding: false)
+                userDefaultManager.set(data, forKey: key.rawValue)
+                userDefaultManager.synchronize()
+
+            } catch {
+                print("Error")
+            }
+        }
     }
 
     private func get(key: UserDefaultHelperKey) -> Any? {
-        return userDefaultManager.object(forKey: key.rawValue)
+        if let data = userDefaultManager.data(forKey: key.rawValue) {
+            return try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)
+        } else {
+            return nil
+        }
     }
+
+    private func delete(key: UserDefaultHelperKey) {
+        userDefaultManager.removeObject(forKey: key.rawValue)
+    }
+
 }

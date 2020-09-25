@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         IQKeyboardManager.shared().isEnabled = true
         FirebaseApp.configure()
-
+        ConnectionManager.sharedInstance.observeReachability()
                 
         self.window = UIWindow(windowScene: windowScene)
         self.window?.makeKeyAndVisible()
