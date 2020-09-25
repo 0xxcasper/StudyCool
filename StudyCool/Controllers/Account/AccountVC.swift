@@ -13,10 +13,13 @@ class AccountVC: BaseViewController {
 
     @IBOutlet weak var boxView: UIView!
     @IBOutlet weak var buttonLogout: PMSuperButton!
+    @IBOutlet weak var useNameView: InputForm!
+    @IBOutlet weak var emailView: InputForm!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         handleSignoutAction()
+        setUpContent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +36,12 @@ class AccountVC: BaseViewController {
     func setupBoxView() {
         boxView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         boxView.layer.cornerRadius = 10
-        boxView.setShadow(color: #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), opacity: 0.7, offSet: CGSize(width: 0, height: 0), radius: 3)
+        boxView.setShadow(color: #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), opacity: 0.2, offSet: CGSize(width: 0, height: 0), radius: 3)
+    }
+    
+    func setUpContent() {
+        useNameView.setUpView(title: "Họ tên", value: "David Silva")
+        emailView.setUpView(title: "Email", value: "nxsang063@gmail.com")
     }
     
     //Mark: Action
