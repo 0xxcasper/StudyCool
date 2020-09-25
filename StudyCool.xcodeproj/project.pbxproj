@@ -13,6 +13,10 @@
 		25477179251C4E1100C1F4CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25477178251C4E1100C1F4CD /* SceneDelegate.swift */; };
 		25477180251C4E1300C1F4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2547717F251C4E1300C1F4CD /* Assets.xcassets */; };
 		25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25477181251C4E1300C1F4CD /* LaunchScreen.storyboard */; };
+		2557979E251DB09500FBC245 /* HeaderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557979D251DB09500FBC245 /* HeaderNavigator.swift */; };
+		255797A1251DB0EE00FBC245 /* HeaderNavigator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255797A0251DB0EE00FBC245 /* HeaderNavigator.xib */; };
+		255797B8251DD19B00FBC245 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255797B6251DD19B00FBC245 /* SCLAlertView.swift */; };
+		255797B9251DD19B00FBC245 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255797B7251DD19B00FBC245 /* SCLExtensions.swift */; };
 		25911BFF251C55AF00B52872 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25911BEF251C55AE00B52872 /* AppConstant.swift */; };
 		25911C00251C55AF00B52872 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25911BF1251C55AE00B52872 /* UIView+Extensions.swift */; };
 		25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25911BF2251C55AE00B52872 /* Bundle+Extention.swift */; };
@@ -52,6 +56,10 @@
 		2547717F251C4E1300C1F4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25477182251C4E1300C1F4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25477184251C4E1300C1F4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2557979D251DB09500FBC245 /* HeaderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderNavigator.swift; sourceTree = "<group>"; };
+		255797A0251DB0EE00FBC245 /* HeaderNavigator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderNavigator.xib; sourceTree = "<group>"; };
+		255797B6251DD19B00FBC245 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		255797B7251DD19B00FBC245 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		25911BEF251C55AE00B52872 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		25911BF1251C55AE00B52872 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		25911BF2251C55AE00B52872 /* Bundle+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extention.swift"; sourceTree = "<group>"; };
@@ -152,9 +160,28 @@
 			path = StudyCool;
 			sourceTree = "<group>";
 		};
+		2557979C251DB08000FBC245 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2557979D251DB09500FBC245 /* HeaderNavigator.swift */,
+				255797A0251DB0EE00FBC245 /* HeaderNavigator.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		255797B5251DD19B00FBC245 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				255797B6251DD19B00FBC245 /* SCLAlertView.swift */,
+				255797B7251DD19B00FBC245 /* SCLExtensions.swift */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
 		25911BE3251C556D00B52872 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				255797B5251DD19B00FBC245 /* SCLAlertView */,
 				25911BF5251C55AE00B52872 /* Base */,
 				25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */,
 			);
@@ -232,6 +259,7 @@
 		25BECCA1251C9FC4004D57CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2557979C251DB08000FBC245 /* Header */,
 				25BECCAA251CA277004D57CC /* EmptyHistoryView */,
 			);
 			path = Views;
@@ -343,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				255797A1251DB0EE00FBC245 /* HeaderNavigator.xib in Resources */,
 				DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */,
 				25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */,
 				DB2A3F96251CF9C000553A60 /* GoogleService-Info.plist in Resources */,
@@ -407,6 +436,7 @@
 				2507CB51251C8FB300B0D28E /* AccountVC.swift in Sources */,
 				DB2A3F99251CFAD700553A60 /* UserAuthViewModel.swift in Sources */,
 				25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */,
+				255797B9251DD19B00FBC245 /* SCLExtensions.swift in Sources */,
 				25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */,
 				25911C02251C55AF00B52872 /* String+Extensions.swift in Sources */,
 				DB2A3F8E251CF20400553A60 /* LoginViewController.swift in Sources */,
@@ -414,7 +444,9 @@
 				25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */,
 				25911C0B251C55AF00B52872 /* UseDefaultHelper.swift in Sources */,
 				25911C24251C5D1100B52872 /* StudyVC.swift in Sources */,
+				2557979E251DB09500FBC245 /* HeaderNavigator.swift in Sources */,
 				DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */,
+				255797B8251DD19B00FBC245 /* SCLAlertView.swift in Sources */,
 				25911C09251C55AF00B52872 /* LanguageHelper.swift in Sources */,
 				25911C03251C55AF00B52872 /* UITableView+Extensions.swift in Sources */,
 				DB2A3F92251CF2FA00553A60 /* AppRouter.swift in Sources */,

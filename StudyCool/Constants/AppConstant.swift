@@ -24,11 +24,15 @@ struct AppConstant {
     static let HEIGTH_TABBAR: CGFloat = 30 + STATUS_BAR_BOTTOM
 }
 
+//Mark: APP STRING
 let kEmpty                  = ""
 let kOK                     = "OK"
+let kWarning                = "Lưu ý"
+let kLogoutMessage          = "Bạn có muốn đăng xuất không."
+let kAccept                 = "Đồng ý"
+let kClose                  = "Đóng"
 
-
-//Mark: Firebase KEY
+//Mark: FIREBASE KEY
 let ID                      = "id"
 let USER                    = "Users"
 let NAME                    = "name"

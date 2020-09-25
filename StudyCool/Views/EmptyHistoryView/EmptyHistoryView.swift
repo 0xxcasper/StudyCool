@@ -16,6 +16,7 @@ protocol EmptyHistoryViewDelegate: class {
 class EmptyHistoryView: BaseViewXib {
 
     @IBOutlet weak var buttonStartLearn: PMSuperButton!
+    @IBOutlet weak var boxView: UIView!
     
     weak var delegate: EmptyHistoryViewDelegate?
 
@@ -25,6 +26,12 @@ class EmptyHistoryView: BaseViewXib {
                 self.delegate?.onStartLearnPress()
             }
         }
+        
+        DispatchQueue.main.async {
+            self.boxView.layer.cornerRadius  = 20
+            self.boxView.layer.masksToBounds = true
+        }
+
     }
 }
 
