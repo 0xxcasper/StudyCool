@@ -30,7 +30,7 @@ struct Firebase {
         Auth.auth().createUser(withEmail: email, password: pass) { (Result, Error) in
             if (Error == nil) {
                 guard let uid = Result?.user.uid else { return }
-                let values = [ID: uid, NAME: name,EMAIL: email]
+                let values = [ID: uid, NAME: name, EMAIL: email]
                 let ref = Database.database().reference().child(USER).child(uid)
                 ref.updateChildValues(values, withCompletionBlock: { (Error, Database) in
                     if (Error == nil) {
