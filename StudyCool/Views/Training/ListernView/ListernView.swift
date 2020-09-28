@@ -8,15 +8,29 @@
 import Foundation
 import UIKit
 
-class ListernView: BaseViewXib {
+protocol ListernViewDelegate: class {
+    func textFieldEditing(_ isEmpty: Bool)
+}
+
+class ListernView: BaseViewXib, UITextFieldDelegate {
    
     @IBOutlet weak var vSpeak: UIView!
     @IBOutlet weak var txfAnswer: UITextField!
     @IBOutlet weak var boxView: UIView!
     @IBOutlet weak var blurView: UIVisualEffectView!
     
+    weak var delegate: ListernViewDelegate!
+    
+    var word: WordModel?{
+        didSet{
+            if word != nil {
+                
+            }
+        }
+    }
+    
     override func firstInit() {
-        
+        txfAnswer.delegate = self
     }
     
     override func layoutSubviews() {
@@ -28,4 +42,12 @@ class ListernView: BaseViewXib {
         blurView.layer.masksToBounds = true
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if (range == NSRange(location: 0, length: 1)) {
+            delegate.textFieldEditing(true)
+        } else {
+            delegate.textFieldEditing(false)
+        }
+        return true
+    }
 }

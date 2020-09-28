@@ -16,6 +16,16 @@ class LearnView: BaseViewXib {
     @IBOutlet weak var lblPronoun: UILabel!
     @IBOutlet weak var lblSub: UILabel!
     
+    var word: WordModel?{
+        didSet{
+            if word != nil {
+                lblWord.text = word?.word
+                lblPronoun.text = word?.pronunciation
+                lblSub.text = word?.mean
+            }
+        }
+    }
+    
     override func firstInit() {
         
     }

@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+
+protocol WriteViewDelegate: class {
+    func customKeyboardEditing(_ isEmpty: Bool)
+}
+
 class WriteView: BaseViewXib {
     
     @IBOutlet weak var collectionAnswerView: UICollectionView!
@@ -16,8 +21,22 @@ class WriteView: BaseViewXib {
     @IBOutlet weak var boxType: UIImageView!
     @IBOutlet weak var blurTitle: UIVisualEffectView!
     @IBOutlet weak var blurSubTitle: UIVisualEffectView!
+    @IBOutlet weak var lblMean: UILabel!
     
-    var words: Array<String> = ["a", "b", "c", "d", "e", "f", "g", "h", ] {
+    weak var delegate: WriteViewDelegate!
+
+    var word: WordModel?{
+        didSet{
+            if word != nil {
+                lblMean.text = word?.mean
+                words.removeAll()
+                wordAnwers.removeAll()
+                words = word!.word!.createRandomCharacters()
+            }
+        }
+    }
+    
+    var words: Array<String> = [] {
         didSet {
             collectionTypeView.reloadData()
         }
@@ -77,6 +96,7 @@ extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(WordCell.self, for: indexPath)
+        cell.isHidden = false
         cell.lblWord.text = collectionView === collectionAnswerView ? wordAnwers[indexPath.row] : words[indexPath.row]
         return cell
     }
@@ -102,6 +122,7 @@ extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSou
             cell.isHidden = true
             wordAnwers.append(words[indexPath.row])
         }
+        delegate.customKeyboardEditing(wordAnwers.isEmpty)
     }
 
 }

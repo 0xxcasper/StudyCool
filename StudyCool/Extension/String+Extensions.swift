@@ -116,3 +116,11 @@ extension UIApplication {
     }
 }
 
+extension String {
+    func createRandomCharacters() -> [String] {
+        let characters = self.map { String($0) }
+        let randomCharacters = characters.shuffled()
+        return randomCharacters
+    }
+}
+

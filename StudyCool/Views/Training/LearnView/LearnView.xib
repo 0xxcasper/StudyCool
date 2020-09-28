@@ -37,8 +37,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Học sinh, sinh viên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-E2-IXP">
-                            <rect key="frame" x="71" y="164" width="136" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Học sinh, sinh viên" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-E2-IXP">
+                            <rect key="frame" x="16" y="164" width="246" height="19.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -48,6 +48,7 @@
                     <constraints>
                         <constraint firstItem="o8f-E2-IXP" firstAttribute="top" secondItem="aZb-Ei-SA6" secondAttribute="bottom" constant="20" id="4KA-HC-HEW"/>
                         <constraint firstItem="Agq-Dk-AEx" firstAttribute="centerX" secondItem="hoV-q0-RQk" secondAttribute="centerX" id="MFY-ju-QdN"/>
+                        <constraint firstItem="o8f-E2-IXP" firstAttribute="leading" secondItem="hoV-q0-RQk" secondAttribute="leading" constant="16" id="Wxk-9g-XGY"/>
                         <constraint firstItem="o8f-E2-IXP" firstAttribute="centerX" secondItem="hoV-q0-RQk" secondAttribute="centerX" id="d8k-eN-BRM"/>
                         <constraint firstItem="aZb-Ei-SA6" firstAttribute="centerX" secondItem="hoV-q0-RQk" secondAttribute="centerX" id="sSS-ev-6hL"/>
                         <constraint firstItem="Agq-Dk-AEx" firstAttribute="top" secondItem="hoV-q0-RQk" secondAttribute="top" constant="80" id="snY-uj-EOC"/>

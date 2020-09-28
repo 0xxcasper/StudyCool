@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrainingViewController" customModule="StudyCool" customModuleProvider="target">
             <connections>
+                <outlet property="btnCheck" destination="hZG-AH-vh1" id="vmz-We-62o"/>
                 <outlet property="progressView" destination="0Mu-qB-ECy" id="BWM-Mu-4Ng"/>
                 <outlet property="vLearn" destination="kSg-YH-ice" id="1Ex-nX-Mps"/>
                 <outlet property="vListern" destination="QPE-ub-MUg" id="h2w-lB-KU4"/>
@@ -30,7 +31,7 @@
                     <rect key="frame" x="0.0" y="40" width="375" height="477"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="0Mu-qB-ECy">
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0Mu-qB-ECy">
                     <rect key="frame" x="50" y="16" width="275" height="4"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <color key="trackTintColor" red="0.76470588240000004" green="0.61176470589999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -78,6 +79,9 @@
                             <color key="value" systemColor="systemRedColor"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onPressCheck:" destination="-1" eventType="touchUpInside" id="uBY-aS-nak"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
