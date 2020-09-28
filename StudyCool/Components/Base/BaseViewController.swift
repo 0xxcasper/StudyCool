@@ -11,14 +11,33 @@ import UIKit
 
 
 class BaseViewController: UIViewController {
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .NetStatus, object: nil)
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNetworkNotification()
     }
 
     func runAfterDelay(_ delay: TimeInterval, block: @escaping ()->()) {
         let time = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
         DispatchQueue.main.asyncAfter(deadline: time, execute: block)
+    }
+    
+    func addNetworkNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNetworkStatus(_:)), name: .NetStatus, object: nil)
+    }
+    
+    @objc func handleNetworkStatus(_ notification: Notification) {
+        guard let networkStatus = notification.userInfo?[KNET_STATUS] as? NetworkType else {return}
+        switch networkStatus {
+        case .valid:
+            print("")
+            break
+        default:
+            print("")
+        }
     }
 }
 

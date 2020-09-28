@@ -38,3 +38,6 @@ let USER                    = "Users"
 let NAME                    = "name"
 let EMAIL                   = "email"
 
+//NOTIFICATION KEY
+let KNET_STATUS             = "K_NET_STATUS"
+

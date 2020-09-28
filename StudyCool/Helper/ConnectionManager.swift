@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum NetworkType {
+    case valid
+    case inValid
+}
+
 class ConnectionManager {
 
 static let sharedInstance = ConnectionManager()
@@ -26,17 +31,13 @@ func observeReachability(){
 @objc func reachabilityChanged(note: Notification) {
     let reachability = note.object as! Reachability
     switch reachability.connection {
-    case .cellular:
+    case .cellular, .wifi:
         print("Network available via Cellular Data.")
+        NotificationCenter.default.post(name: .NetStatus, object: nil, userInfo: [KNET_STATUS: NetworkType.valid])
         break
-    case .wifi:
-        print("Network available via WiFi.")
-        break
-    case .none:
+    case .none, .unavailable:
         print("Network is not available.")
-        break
-    case .unavailable:
-        print("Network is  unavailable.")
+        NotificationCenter.default.post(name: .NetStatus, object: nil, userInfo: [KNET_STATUS: NetworkType.inValid])
         break
     }
   }

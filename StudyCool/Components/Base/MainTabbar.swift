@@ -17,7 +17,6 @@ class MainTabbar: BubbleTabBarController {
     }
 
     deinit {
-        NotificationCenter.default.removeObserver(self, name: .OpenPlayBar, object: nil)
     }
     
     override func viewDidLoad() {

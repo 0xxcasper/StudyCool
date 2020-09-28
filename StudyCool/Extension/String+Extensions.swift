@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 
-extension Notification.Name {
-     static let ChangeLanguage = Notification.Name(rawValue: "ChangeLanguage")
-     static let ChangeRegion = Notification.Name(rawValue: "ChangeRegion")
-     static let OpenPlayBar = Notification.Name(rawValue: "OpenPlayBar")
+extension Notification.Name {    
+    static let NetValid = Notification.Name(rawValue: "NetValid")
+    static let NetInValid = Notification.Name(rawValue: "NetInValid")
+    static let NetStatus = Notification.Name(rawValue: "NetStatus")
 }
 
 extension String {
