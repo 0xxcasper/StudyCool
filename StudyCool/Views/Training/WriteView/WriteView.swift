@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+struct WriteWord {
+    var index: Int!
+    var text: String!
+}
 
 protocol WriteViewDelegate: class {
     func customKeyboardEditing(_ isEmpty: Bool)
@@ -36,13 +40,13 @@ class WriteView: BaseViewXib {
         }
     }
     
-    var words: Array<String> = [] {
+    var words: Array<WriteWord> = [] {
         didSet {
             collectionTypeView.reloadData()
         }
     }
     
-    var wordAnwers: Array<String> = [] {
+    var wordAnwers: Array<WriteWord> = [] {
         didSet {
             collectionAnswerView.reloadData()
         }
@@ -97,7 +101,7 @@ extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(WordCell.self, for: indexPath)
         cell.isHidden = false
-        cell.lblWord.text = collectionView === collectionAnswerView ? wordAnwers[indexPath.row] : words[indexPath.row]
+        cell.lblWord.text = collectionView === collectionAnswerView ? wordAnwers[indexPath.row].text : words[indexPath.row].text
         return cell
     }
     
@@ -112,7 +116,7 @@ extension WriteView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (collectionView === collectionAnswerView) {
-            if let index = words.firstIndex(of: wordAnwers[indexPath.row]) {
+            if let index = wordAnwers[indexPath.row].index {
                 let cell = collectionTypeView.cellForItem(at: IndexPath(item: index, section: 0)) as! WordCell
                 cell.isHidden = false
                 wordAnwers.remove(at: indexPath.row)

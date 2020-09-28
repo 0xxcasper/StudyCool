@@ -117,9 +117,14 @@ extension UIApplication {
 }
 
 extension String {
-    func createRandomCharacters() -> [String] {
+    func createRandomCharacters() -> [WriteWord] {
         let characters = self.map { String($0) }
-        let randomCharacters = characters.shuffled()
+        let shuffed = characters.shuffled()
+        var randomCharacters: [WriteWord] = []
+        for i in 0..<shuffed.count {
+            let randomCharacter = WriteWord(index: i, text: shuffed[i])
+            randomCharacters.append(randomCharacter)
+        }
         return randomCharacters
     }
 }
