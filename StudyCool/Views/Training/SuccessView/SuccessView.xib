@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessView" customModule="StudyCool" customModuleProvider="target">
+            <connections>
+                <outlet property="lblExample" destination="gHk-CA-9cE" id="WIv-we-xo0"/>
+                <outlet property="lblMean" destination="rCg-zs-cGZ" id="9Tt-TE-ix6"/>
+                <outlet property="lblPronoun" destination="t8T-o1-Jy3" id="WTE-SY-YLU"/>
+                <outlet property="lblTitle" destination="gNA-59-Uzh" id="QYC-zT-guI"/>
+                <outlet property="vBG" destination="Tqw-6L-6eE" id="MpC-lE-Dtm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tqw-6L-6eE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-59-Uzh">
+                            <rect key="frame" x="16" y="30" width="382" height="38.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Học sinh (n)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-zs-cGZ">
+                            <rect key="frame" x="16" y="120.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a student" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHk-CA-9cE">
+                            <rect key="frame" x="16" y="157" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ student /" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8T-o1-Jy3">
+                            <rect key="frame" x="16" y="84.5" width="382" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstItem="t8T-o1-Jy3" firstAttribute="leading" secondItem="gNA-59-Uzh" secondAttribute="leading" id="2wZ-Ix-toM"/>
+                        <constraint firstItem="gNA-59-Uzh" firstAttribute="top" secondItem="Tqw-6L-6eE" secondAttribute="top" constant="30" id="9cq-hY-4rd"/>
+                        <constraint firstItem="rCg-zs-cGZ" firstAttribute="leading" secondItem="t8T-o1-Jy3" secondAttribute="leading" id="C4U-MT-1vI"/>
+                        <constraint firstAttribute="trailing" secondItem="gNA-59-Uzh" secondAttribute="trailing" constant="16" id="IDV-Yb-Y4B"/>
+                        <constraint firstItem="gNA-59-Uzh" firstAttribute="leading" secondItem="Tqw-6L-6eE" secondAttribute="leading" constant="16" id="QbG-4d-wg6"/>
+                        <constraint firstItem="t8T-o1-Jy3" firstAttribute="trailing" secondItem="gNA-59-Uzh" secondAttribute="trailing" id="RSC-GL-Koj"/>
+                        <constraint firstItem="gHk-CA-9cE" firstAttribute="trailing" secondItem="rCg-zs-cGZ" secondAttribute="trailing" id="XmO-ki-4IU"/>
+                        <constraint firstItem="t8T-o1-Jy3" firstAttribute="top" secondItem="gNA-59-Uzh" secondAttribute="bottom" constant="16" id="cp5-ar-9Qz"/>
+                        <constraint firstItem="gHk-CA-9cE" firstAttribute="leading" secondItem="rCg-zs-cGZ" secondAttribute="leading" id="eeP-Hn-ZEm"/>
+                        <constraint firstItem="rCg-zs-cGZ" firstAttribute="top" secondItem="t8T-o1-Jy3" secondAttribute="bottom" constant="16" id="h5N-kH-7ce"/>
+                        <constraint firstItem="gHk-CA-9cE" firstAttribute="top" secondItem="rCg-zs-cGZ" secondAttribute="bottom" constant="16" id="jmN-W0-MKL"/>
+                        <constraint firstItem="rCg-zs-cGZ" firstAttribute="trailing" secondItem="t8T-o1-Jy3" secondAttribute="trailing" id="yBs-aX-QNZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Tqw-6L-6eE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5ag-Ti-Kxs"/>
+                <constraint firstAttribute="trailing" secondItem="Tqw-6L-6eE" secondAttribute="trailing" id="Kxu-JA-9XI"/>
+                <constraint firstAttribute="bottom" secondItem="Tqw-6L-6eE" secondAttribute="bottom" id="OKn-pj-zgG"/>
+                <constraint firstItem="Tqw-6L-6eE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PQy-wI-gPG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-413.04347826086962" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
