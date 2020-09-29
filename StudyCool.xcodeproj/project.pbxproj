@@ -50,6 +50,8 @@
 		849B281F251DC9590045D15D /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B281D251DC9590045D15D /* WordCell.swift */; };
 		849B2820251DC9590045D15D /* WordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849B281E251DC9590045D15D /* WordCell.xib */; };
 		849B283C251DCA860045D15D /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B283B251DCA860045D15D /* UICollectionView+Extensions.swift */; };
+		84AED9932522DFB5001A83F0 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AED9922522DFB5001A83F0 /* SuccessView.swift */; };
+		84AED9962522DFC0001A83F0 /* SuccessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AED9952522DFC0001A83F0 /* SuccessView.xib */; };
 		AC307554AD592C735D13CCB4 /* Pods_StudyCool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */; };
 		DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F88251CF20400553A60 /* RegisterViewController.xib */; };
 		DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A3F89251CF20400553A60 /* LoginViewController.xib */; };
@@ -111,6 +113,8 @@
 		849B281D251DC9590045D15D /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		849B281E251DC9590045D15D /* WordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCell.xib; sourceTree = "<group>"; };
 		849B283B251DCA860045D15D /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		84AED9922522DFB5001A83F0 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		84AED9952522DFC0001A83F0 /* SuccessView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessView.xib; sourceTree = "<group>"; };
 		B8054D8E7FD62059B061E102 /* Pods-StudyCool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.release.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.release.xcconfig"; sourceTree = "<group>"; };
 		CA80808715A7DCEFA3EF7F1A /* Pods_StudyCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2A3F88251CF20400553A60 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -340,6 +344,7 @@
 		849B2805251DA7150045D15D /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				84AED9912522DF7B001A83F0 /* SuccessView */,
 				849B2808251DA73E0045D15D /* WriteView */,
 				849B2807251DA7280045D15D /* ListernView */,
 				849B2806251DA71C0045D15D /* LearnView */,
@@ -382,6 +387,15 @@
 				849B281E251DC9590045D15D /* WordCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		84AED9912522DF7B001A83F0 /* SuccessView */ = {
+			isa = PBXGroup;
+			children = (
+				84AED9922522DFB5001A83F0 /* SuccessView.swift */,
+				84AED9952522DFC0001A83F0 /* SuccessView.xib */,
+			);
+			path = SuccessView;
 			sourceTree = "<group>";
 		};
 		DB2A3F87251CF20400553A60 /* Authentic */ = {
@@ -511,6 +525,7 @@
 				8463534A252199FF0055A750 /* words.json in Resources */,
 				DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */,
 				25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */,
+				84AED9962522DFC0001A83F0 /* SuccessView.xib in Resources */,
 				849B281A251DC48B0045D15D /* WriteView.xib in Resources */,
 				849B2814251DC03E0045D15D /* ListernView.xib in Resources */,
 				25911C25251C5D1100B52872 /* StudyVC.xib in Resources */,
@@ -572,6 +587,7 @@
 				849B2811251DC0310045D15D /* ListernView.swift in Sources */,
 				849B283C251DCA860045D15D /* UICollectionView+Extensions.swift in Sources */,
 				DB2A3F99251CFAD700553A60 /* UserAuthViewModel.swift in Sources */,
+				84AED9932522DFB5001A83F0 /* SuccessView.swift in Sources */,
 				25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */,
 				255797B9251DD19B00FBC245 /* SCLExtensions.swift in Sources */,
 				25911C01251C55AF00B52872 /* Bundle+Extention.swift in Sources */,

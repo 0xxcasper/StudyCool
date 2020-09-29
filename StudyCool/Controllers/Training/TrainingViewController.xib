@@ -15,6 +15,7 @@
                 <outlet property="progressView" destination="0Mu-qB-ECy" id="BWM-Mu-4Ng"/>
                 <outlet property="vLearn" destination="kSg-YH-ice" id="1Ex-nX-Mps"/>
                 <outlet property="vListern" destination="QPE-ub-MUg" id="h2w-lB-KU4"/>
+                <outlet property="vSuccess" destination="Llk-sR-MNN" id="pN3-MR-KxV"/>
                 <outlet property="vWrite" destination="sA7-Hq-0jl" id="Z6D-wK-Lmb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,6 +47,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPE-ub-MUg" customClass="ListernView" customModule="StudyCool" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="40" width="375" height="377"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Llk-sR-MNN" customClass="SuccessView" customModule="StudyCool" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="193.5" width="375" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="Ti0-sR-IF0"/>
+                    </constraints>
                 </view>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZG-AH-vh1" customClass="PMSuperButton" customModule="StudyCool" customModuleProvider="target">
                     <rect key="frame" x="37.5" y="562" width="300" height="55"/>
@@ -87,14 +94,17 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Llk-sR-MNN" secondAttribute="trailing" id="7JD-g6-uxa"/>
                 <constraint firstItem="BDv-G3-dni" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Uz-I3-Vk0"/>
                 <constraint firstItem="kSg-YH-ice" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="9d4-33-tm3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sA7-Hq-0jl" secondAttribute="bottom" constant="150" id="F38-rb-86d"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kSg-YH-ice" secondAttribute="trailing" constant="40" id="KvD-H0-zhI"/>
                 <constraint firstItem="BDv-G3-dni" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NiD-Ae-V5r"/>
                 <constraint firstItem="QPE-ub-MUg" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="QTq-jD-Jlv"/>
+                <constraint firstItem="Llk-sR-MNN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Uah-TA-Pc7"/>
                 <constraint firstItem="sA7-Hq-0jl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UjQ-ZN-CTz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hZG-AH-vh1" secondAttribute="bottom" constant="50" id="Viy-TQ-81S"/>
+                <constraint firstItem="Llk-sR-MNN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XdQ-9T-ok6"/>
                 <constraint firstItem="0Mu-qB-ECy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="bdf-5r-2gp"/>
                 <constraint firstItem="0Mu-qB-ECy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eOl-Av-ssj"/>
                 <constraint firstItem="hZG-AH-vh1" firstAttribute="top" secondItem="BDv-G3-dni" secondAttribute="bottom" constant="40" id="egR-26-zvc"/>
@@ -102,6 +112,7 @@
                 <constraint firstItem="0Mu-qB-ECy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="ipl-14-pda"/>
                 <constraint firstItem="sA7-Hq-0jl" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="irs-DD-NkR"/>
                 <constraint firstItem="hZG-AH-vh1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jgm-Qy-SsJ"/>
+                <constraint firstItem="Llk-sR-MNN" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="keN-kX-x7B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sA7-Hq-0jl" secondAttribute="trailing" id="ml9-NH-5ZP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QPE-ub-MUg" secondAttribute="trailing" id="n7o-zD-EhE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QPE-ub-MUg" secondAttribute="bottom" constant="250" id="rC5-6r-AxB"/>

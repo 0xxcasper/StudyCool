@@ -19,6 +19,7 @@ class TrainingViewController: BaseViewController {
     @IBOutlet weak var vLearn: LearnView!
     @IBOutlet weak var vListern: ListernView!
     @IBOutlet weak var vWrite: WriteView!
+    @IBOutlet weak var vSuccess: SuccessView!
     @IBOutlet weak var btnCheck: PMSuperButton!
     
     var currentIndexWord: Int! = 0
@@ -40,12 +41,14 @@ class TrainingViewController: BaseViewController {
             let tenWord = words.prefix(20) // GET 20 word
             self.words = Array(tenWord)
             self.vLearn.word = words[currentIndexWord]
+            self.vSuccess.word = words[currentIndexWord]
         }
     }
     
     private func setUpView() {   
         progressView.layer.cornerRadius = 8
         progressView.transform = progressView.transform.scaledBy(x: 1, y: 2)
+        vSuccess.isHidden = true
         vListern.delegate = self
         vWrite.delegate = self
         self.setShowView()
@@ -90,16 +93,40 @@ class TrainingViewController: BaseViewController {
             self.view.endEditing(true)
             switch self.currentTrainingType {
             case .learn:
+                self.vSuccess.word = words![currentIndexWord]
+                self.vSuccess.isHidden = true
                 self.currentTrainingType = .listen
                 self.vLearn.word = words![currentIndexWord]
             case .listen:
-                self.currentTrainingType = .write
-                self.vWrite.word = words![currentIndexWord]
+                if (self.vSuccess.isHidden) {
+                    self.vSuccess.isHidden = false
+                    // TODO: Check Wrong or Right
+                    if let answer = self.vListern.txfAnswer.text, words![currentIndexWord].word.lowercased() == answer.lowercased() {
+                        self.vSuccess.vBG.backgroundColor = .green
+                    } else {
+                        self.vSuccess.vBG.backgroundColor = .red
+                    }
+                } else {
+                    self.vSuccess.isHidden = true
+                    self.currentTrainingType = .write
+                    self.vWrite.word = words![currentIndexWord]
+                }
             case .write:
-                self.currentIndexWord = self.currentIndexWord + 1
-                self.currentTrainingType = .learn
-                self.vLearn.word = words![currentIndexWord]
-                self.progressView.setProgress(Float(self.currentIndexWord)/Float(self.words!.count), animated: true)
+                if (self.vSuccess.isHidden) {
+                    self.vSuccess.isHidden = false
+                    // TODO: Check Wrong or Right
+                    if  self.vWrite.wordAnwers.compactMap({ $0.text }).joined().lowercased() == words![currentIndexWord].word.lowercased() {
+                        self.vSuccess.vBG.backgroundColor = .green
+                    } else {
+                        self.vSuccess.vBG.backgroundColor = .red
+                    }
+                } else {
+                    self.vSuccess.isHidden = true
+                    self.currentIndexWord = self.currentIndexWord + 1
+                    self.currentTrainingType = .learn
+                    self.vLearn.word = words![currentIndexWord]
+                    self.progressView.setProgress(Float(self.currentIndexWord)/Float(self.words!.count), animated: true)
+                }
             default: break
             }
         } else {
