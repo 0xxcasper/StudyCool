@@ -31,6 +31,13 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqx-ni-iaI">
+                            <rect key="frame" x="369" y="35" width="29" height="29"/>
+                            <state key="normal" image="volume"/>
+                            <connections>
+                                <action selector="onPressSpeak:" destination="-1" eventType="touchUpInside" id="GrY-da-eFb"/>
+                            </connections>
+                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Học sinh (n)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-zs-cGZ">
                             <rect key="frame" x="16" y="120.5" width="382" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,12 +60,14 @@
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <constraints>
                         <constraint firstItem="t8T-o1-Jy3" firstAttribute="leading" secondItem="gNA-59-Uzh" secondAttribute="leading" id="2wZ-Ix-toM"/>
+                        <constraint firstAttribute="trailing" secondItem="jqx-ni-iaI" secondAttribute="trailing" constant="16" id="34g-GS-BYA"/>
                         <constraint firstItem="gNA-59-Uzh" firstAttribute="top" secondItem="Tqw-6L-6eE" secondAttribute="top" constant="30" id="9cq-hY-4rd"/>
                         <constraint firstItem="rCg-zs-cGZ" firstAttribute="leading" secondItem="t8T-o1-Jy3" secondAttribute="leading" id="C4U-MT-1vI"/>
                         <constraint firstAttribute="trailing" secondItem="gNA-59-Uzh" secondAttribute="trailing" constant="16" id="IDV-Yb-Y4B"/>
                         <constraint firstItem="gNA-59-Uzh" firstAttribute="leading" secondItem="Tqw-6L-6eE" secondAttribute="leading" constant="16" id="QbG-4d-wg6"/>
                         <constraint firstItem="t8T-o1-Jy3" firstAttribute="trailing" secondItem="gNA-59-Uzh" secondAttribute="trailing" id="RSC-GL-Koj"/>
                         <constraint firstItem="gHk-CA-9cE" firstAttribute="trailing" secondItem="rCg-zs-cGZ" secondAttribute="trailing" id="XmO-ki-4IU"/>
+                        <constraint firstItem="jqx-ni-iaI" firstAttribute="centerY" secondItem="gNA-59-Uzh" secondAttribute="centerY" id="Zgj-I9-1u1"/>
                         <constraint firstItem="t8T-o1-Jy3" firstAttribute="top" secondItem="gNA-59-Uzh" secondAttribute="bottom" constant="16" id="cp5-ar-9Qz"/>
                         <constraint firstItem="gHk-CA-9cE" firstAttribute="leading" secondItem="rCg-zs-cGZ" secondAttribute="leading" id="eeP-Hn-ZEm"/>
                         <constraint firstItem="rCg-zs-cGZ" firstAttribute="top" secondItem="t8T-o1-Jy3" secondAttribute="bottom" constant="16" id="h5N-kH-7ce"/>
@@ -79,6 +88,7 @@
         </view>
     </objects>
     <resources>
+        <image name="volume" width="29" height="29"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AVFoundation
 
 let APPLE_LANGUAGE_KEY = "AppLanguages"
 
@@ -17,6 +18,7 @@ enum LanguageType: String {
 
 class LanguageHelper {
     
+
     //get current apple language
     class func currentAppleLanguage() -> String {
         let userdef = UserDefaults.standard
@@ -70,4 +72,15 @@ class LanguageHelper {
                 return  Bundle(path: _path)!
         }
     }
+    
+    class func speakMessage(string: String) {
+        let speakTalk   = AVSpeechSynthesizer()
+        let speakMsg    = AVSpeechUtterance(string: string)
+
+        speakMsg.voice  = AVSpeechSynthesisVoice(language: "en-US")
+        speakMsg.pitchMultiplier = 1.2
+        speakMsg.rate   = 0.5
+        speakTalk.speak(speakMsg)
+    }
+    
 }

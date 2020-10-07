@@ -13,6 +13,8 @@ enum TrainingType {
     case write
 }
 
+let topic = "ielts"
+
 class TrainingViewController: BaseViewController {
     
     @IBOutlet weak var progressView: UIProgressView!
@@ -37,11 +39,12 @@ class TrainingViewController: BaseViewController {
     }
     
     private func getData() {
-        if let words = JsonHelper.readJSONFromFile(fileName: "words", type: "ielts") {
-            let tenWord = words.prefix(20) // GET 20 word
+        if let words = JsonHelper.readJSONFromFile(fileName: "words", type: topic) {
+            let tenWord = words.prefix(10) // GET 10 word
             self.words = Array(tenWord)
             self.vLearn.word = words[currentIndexWord]
             self.vSuccess.word = words[currentIndexWord]
+            self.words![currentIndexWord].learnLevel += 1
         }
     }
     
@@ -87,22 +90,28 @@ class TrainingViewController: BaseViewController {
             btnCheck.gradientEndColor = .gray
         }
     }
-
+    
+    @IBAction func onPressBack(_ sender: Any) {
+        self.dismiss()
+    }
+    
     @IBAction func onPressCheck(_ sender: PMSuperButton) {
-        if (self.words != nil && self.currentIndexWord + 1 < self.words!.count) {
+        if (self.words != nil && self.currentIndexWord < self.words!.count) {
             self.view.endEditing(true)
             switch self.currentTrainingType {
             case .learn:
                 self.vSuccess.word = words![currentIndexWord]
                 self.vSuccess.isHidden = true
                 self.currentTrainingType = .listen
-                self.vLearn.word = words![currentIndexWord]
+                self.vListern.word = words![currentIndexWord]
+                self.words![currentIndexWord].learnLevel += 1
             case .listen:
                 if (self.vSuccess.isHidden) {
                     self.vSuccess.isHidden = false
                     // TODO: Check Wrong or Right
                     if let answer = self.vListern.txfAnswer.text, words![currentIndexWord].word.lowercased() == answer.lowercased() {
                         self.vSuccess.vBG.backgroundColor = .green
+                        self.words![currentIndexWord].listenLevel += 1
                     } else {
                         self.vSuccess.vBG.backgroundColor = .red
                     }
@@ -117,20 +126,25 @@ class TrainingViewController: BaseViewController {
                     // TODO: Check Wrong or Right
                     if  self.vWrite.wordAnwers.compactMap({ $0.text }).joined().lowercased() == words![currentIndexWord].word.lowercased() {
                         self.vSuccess.vBG.backgroundColor = .green
+                        self.words![currentIndexWord].writeLevel += 1
                     } else {
                         self.vSuccess.vBG.backgroundColor = .red
                     }
                 } else {
                     self.vSuccess.isHidden = true
-                    self.currentIndexWord = self.currentIndexWord + 1
-                    self.currentTrainingType = .learn
-                    self.vLearn.word = words![currentIndexWord]
-                    self.progressView.setProgress(Float(self.currentIndexWord)/Float(self.words!.count), animated: true)
+                    if (self.currentIndexWord + 1 >= self.words!.count) {
+                        self.progressView.setProgress(1.0, animated: true)
+                        Firebase.shared.setDataTopicLearned(words: self.words!, titleTopic: topic)
+                        self.dismiss()
+                    } else {
+                        self.currentIndexWord = self.currentIndexWord + 1
+                        self.currentTrainingType = .learn
+                        self.vLearn.word = words![currentIndexWord]
+                        self.progressView.setProgress(Float(self.currentIndexWord)/Float(self.words!.count), animated: true)
+                    }
                 }
             default: break
             }
-        } else {
-            self.dismiss()
         }
     }
 }

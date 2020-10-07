@@ -10,19 +10,23 @@ import UIKit
 
 class WordModel {
     
-    var id: String!
+    var id: Int!
     var word: String!
     var mean: String!
     var pronunciation: String!
     var sentence: String!
-    var isLearn: Bool!
+    var learnLevel: Int!
+    var listenLevel: Int!
+    var writeLevel: Int!
 
     init(_ data: [String:AnyObject]) {
-        id = data["id"] as? String
+        id = data["id"] as? Int
         word = (data["word"] != nil) ? data["word"]!.trimmingCharacters(in: .whitespacesAndNewlines) : ""
         mean = data["mean"] as? String
         pronunciation = data["pronunciation"] as? String
         sentence = data["sentence"] as? String
-        isLearn = false
+        learnLevel = 0
+        listenLevel = 0
+        writeLevel = 0
     }
 }

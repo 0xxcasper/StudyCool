@@ -25,4 +25,11 @@ class SuccessView: BaseViewXib {
             }
         }
     }
+    
+    @IBAction func onPressSpeak(_ sender: Any) {
+        if let word = word {
+            LanguageHelper.speakMessage(string: word.word)
+        }
+    }
+    
 }

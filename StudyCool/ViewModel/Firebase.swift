@@ -65,5 +65,18 @@ struct Firebase {
                 completion(nil)
             }
         }
-    }}
+    }
+    
+    func setDataTopicLearned(words: [WordModel], titleTopic: String) {
+        guard let currentId = Auth.auth().currentUser?.uid else { return }
+        let ref = Database.database().reference().child("Topics").child(currentId).child(titleTopic)
+        let values = ["title": titleTopic] as [String : Any]
+        ref.updateChildValues(values)
+        
+        let refWords = ref.child("words")
+        for word in words {
+            refWords.child("\(word.id ?? 0)").setValue(["id" : word.id ?? 0, "learnLevel": word.learnLevel, "listenRight": word.listenLevel, "writeLevel": word.writeLevel])
+        }
+    }
+}
 

@@ -37,5 +37,9 @@ class LearnView: BaseViewXib {
         self.setShadow(color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), offSet: CGSize(width: 1, height: 1), radius: 5)
         self.setViewCorner(radius: 10)
     }
+    
+    @IBAction func onPressSpeak(_ sender: Any) {
+        LanguageHelper.speakMessage(string: word?.word ?? "")
+    }
 }
 

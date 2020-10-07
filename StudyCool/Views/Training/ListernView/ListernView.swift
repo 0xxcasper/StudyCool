@@ -50,4 +50,10 @@ class ListernView: BaseViewXib, UITextFieldDelegate {
         }
         return true
     }
+    
+    @IBAction func onPressSpeak(_ sender: Any) {
+        if let word = word {
+            LanguageHelper.speakMessage(string: word.word)
+        }
+    }
 }

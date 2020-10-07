@@ -42,11 +42,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giZ-oC-EZu">
                     <rect key="frame" x="182.5" y="110" width="50" height="50"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume" translatesAutoresizingMaskIntoConstraints="NO" id="wq5-GY-Jru">
-                            <rect key="frame" x="12" y="12" width="26" height="26"/>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uD-Bz-kSk">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uD-Bz-kSk">
                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <state key="normal" image="volume"/>
+                            <connections>
+                                <action selector="onPressSpeak:" destination="-1" eventType="touchUpInside" id="NXI-fQ-g2b"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,11 +57,7 @@
                         <constraint firstAttribute="trailing" secondItem="1uD-Bz-kSk" secondAttribute="trailing" id="UaC-Rs-GZw"/>
                         <constraint firstAttribute="bottom" secondItem="1uD-Bz-kSk" secondAttribute="bottom" id="c1y-Lx-3E8"/>
                         <constraint firstItem="1uD-Bz-kSk" firstAttribute="top" secondItem="giZ-oC-EZu" secondAttribute="top" id="eim-Ap-MPQ"/>
-                        <constraint firstItem="wq5-GY-Jru" firstAttribute="leading" secondItem="giZ-oC-EZu" secondAttribute="leading" constant="12" id="oWZ-IW-E9S"/>
-                        <constraint firstAttribute="trailing" secondItem="wq5-GY-Jru" secondAttribute="trailing" constant="12" id="ouD-fI-FlB"/>
                         <constraint firstAttribute="width" constant="50" id="uuY-oW-8RD"/>
-                        <constraint firstAttribute="bottom" secondItem="wq5-GY-Jru" secondAttribute="bottom" constant="12" id="vjM-Yr-krl"/>
-                        <constraint firstItem="wq5-GY-Jru" firstAttribute="top" secondItem="giZ-oC-EZu" secondAttribute="top" constant="12" id="xpX-rb-0dM"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-5f-C7u">
@@ -99,11 +96,6 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-196.37681159420291" y="178.125"/>
         </view>
-        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="37B-pE-kAI">
-            <rect key="frame" x="0.0" y="-1" width="118" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="-685" y="181"/>
-        </slider>
     </objects>
     <resources>
         <image name="volume" width="29" height="29"/>

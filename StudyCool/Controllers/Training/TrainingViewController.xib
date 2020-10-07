@@ -28,6 +28,18 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_train" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-G3-dni">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="522"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-ZS-ypd">
+                    <rect key="frame" x="10" y="3" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Fho-qz-iKl"/>
+                        <constraint firstAttribute="width" constant="30" id="P6M-JY-wWD"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="onPressBack:" destination="-1" eventType="touchUpInside" id="Ptt-LF-Rte"/>
+                    </connections>
+                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sA7-Hq-0jl" customClass="WriteView" customModule="StudyCool" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="40" width="375" height="477"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,6 +110,7 @@
                 <constraint firstItem="BDv-G3-dni" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Uz-I3-Vk0"/>
                 <constraint firstItem="kSg-YH-ice" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="9d4-33-tm3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sA7-Hq-0jl" secondAttribute="bottom" constant="150" id="F38-rb-86d"/>
+                <constraint firstItem="1Xh-ZS-ypd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Gmx-aI-6ci"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kSg-YH-ice" secondAttribute="trailing" constant="40" id="KvD-H0-zhI"/>
                 <constraint firstItem="BDv-G3-dni" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NiD-Ae-V5r"/>
                 <constraint firstItem="QPE-ub-MUg" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="QTq-jD-Jlv"/>
@@ -117,6 +130,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QPE-ub-MUg" secondAttribute="trailing" id="n7o-zD-EhE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QPE-ub-MUg" secondAttribute="bottom" constant="250" id="rC5-6r-AxB"/>
                 <constraint firstItem="QPE-ub-MUg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sSx-dE-EnY"/>
+                <constraint firstItem="1Xh-ZS-ypd" firstAttribute="centerY" secondItem="0Mu-qB-ECy" secondAttribute="centerY" id="tH4-51-fHd"/>
                 <constraint firstItem="BDv-G3-dni" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="x0R-oP-VS2"/>
             </constraints>
             <point key="canvasLocation" x="138.40000000000001" y="108.39580209895054"/>
@@ -128,6 +142,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="back" width="24" height="24"/>
         <image name="bg_train" width="256" height="336"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
