@@ -37,6 +37,9 @@
 		25BECCA5251CA1C0004D57CC /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */; };
 		25BECCA8251CA22E004D57CC /* EmptyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */; };
 		25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */; };
+		843682402549075E00C8B8BF /* StudyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436823E2549075E00C8B8BF /* StudyCell.swift */; };
+		843682412549075E00C8B8BF /* StudyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8436823F2549075E00C8B8BF /* StudyCell.xib */; };
+		8436827625496EED00C8B8BF /* ielts1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8436827525496EED00C8B8BF /* ielts1.json */; };
 		846353472521982E0055A750 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846353462521982E0055A750 /* WordModel.swift */; };
 		8463534A252199FF0055A750 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 84635349252199FF0055A750 /* words.json */; };
 		849B2801251D9F3C0045D15D /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B27FF251D9F3C0045D15D /* TrainingViewController.swift */; };
@@ -100,6 +103,9 @@
 		25BECCA4251CA1C0004D57CC /* PMSuperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
 		25BECCA7251CA22E004D57CC /* EmptyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHistoryView.swift; sourceTree = "<group>"; };
 		25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyHistoryView.xib; sourceTree = "<group>"; };
+		8436823E2549075E00C8B8BF /* StudyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCell.swift; sourceTree = "<group>"; };
+		8436823F2549075E00C8B8BF /* StudyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyCell.xib; sourceTree = "<group>"; };
+		8436827525496EED00C8B8BF /* ielts1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts1.json; sourceTree = "<group>"; };
 		846353462521982E0055A750 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		84635349252199FF0055A750 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		849B27FF251D9F3C0045D15D /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 				25477181251C4E1300C1F4CD /* LaunchScreen.storyboard */,
 				25477184251C4E1300C1F4CD /* Info.plist */,
 				DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */,
+				8436827525496EED00C8B8BF /* ielts1.json */,
 			);
 			path = StudyCool;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 		25911C21251C5CF900B52872 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				8436823D2549073800C8B8BF /* Cell */,
 				25911C22251C5D1100B52872 /* StudyVC.swift */,
 				25911C23251C5D1100B52872 /* StudyVC.xib */,
 			);
@@ -330,6 +338,15 @@
 				25BECCAB251CA292004D57CC /* EmptyHistoryView.xib */,
 			);
 			path = EmptyHistoryView;
+			sourceTree = "<group>";
+		};
+		8436823D2549073800C8B8BF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8436823E2549075E00C8B8BF /* StudyCell.swift */,
+				8436823F2549075E00C8B8BF /* StudyCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		849B27FE251D9F0C0045D15D /* Training */ = {
@@ -513,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843682412549075E00C8B8BF /* StudyCell.xib in Resources */,
 				255797A1251DB0EE00FBC245 /* HeaderNavigator.xib in Resources */,
 				DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */,
 				25A4E120251DF4B400CD969C /* InputForm.xib in Resources */,
@@ -529,6 +547,7 @@
 				849B281A251DC48B0045D15D /* WriteView.xib in Resources */,
 				849B2814251DC03E0045D15D /* ListernView.xib in Resources */,
 				25911C25251C5D1100B52872 /* StudyVC.xib in Resources */,
+				8436827625496EED00C8B8BF /* ielts1.json in Resources */,
 				2507CB52251C8FB300B0D28E /* AccountVC.xib in Resources */,
 				25477180251C4E1300C1F4CD /* Assets.xcassets in Resources */,
 			);
@@ -610,6 +629,7 @@
 				25A4E11F251DF4B400CD969C /* InputForm.swift in Sources */,
 				DB2A3F92251CF2FA00553A60 /* AppRouter.swift in Sources */,
 				DB2A3F8F251CF20400553A60 /* RegisterViewController.swift in Sources */,
+				843682402549075E00C8B8BF /* StudyCell.swift in Sources */,
 				25911C05251C55AF00B52872 /* MainTabbar.swift in Sources */,
 				25477177251C4E1100C1F4CD /* AppDelegate.swift in Sources */,
 				25911C0A251C55AF00B52872 /* JsonHelper.swift in Sources */,
