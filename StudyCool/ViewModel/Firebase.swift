@@ -90,10 +90,11 @@ struct Firebase {
         let ref = Database.database().reference().child("Topics").child(currentId).child(titleTopic)
        
         let wordsLearned = List<WordLearned>()
-        for word in words {
+        for i in 0..<words.count {
+            let word = words[i]
             // Save Firebase
             let level = (word.listened && word.writen) ? word.level + 1 : word.level
-            ref.child("\(word.id ?? 0)").updateChildValues(["id" : word.id ?? 0, "level": level ?? 0])
+            ref.child("\(i)").updateChildValues(["id" : word.id ?? 0, "level": level ?? 0])
             // Save Local
             let wordLearned = WordLearned(id: word.id ?? 0, level: level ?? 0)
             wordsLearned.append(wordLearned)

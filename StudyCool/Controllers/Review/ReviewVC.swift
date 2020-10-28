@@ -10,6 +10,7 @@ import Charts
 
 class ReviewVC: BaseViewController {
     @IBOutlet weak var vBarChart: BarChartView!
+    @IBOutlet weak var btnBack: UIButton!
     
     lazy var emptyHistoryView: EmptyHistoryView = {
         let emptyView = EmptyHistoryView()
@@ -30,44 +31,50 @@ class ReviewVC: BaseViewController {
                 self.addEmptyHistoryView()
             } else {
                 vBarChart.isHidden = false
+                self.emptyHistoryView.isHidden = true
                 self.drawChart()
             }
         }
     }
     
+    var typeTopic: String!
+    var fileName: String!
     var dataEntries: [BarChartDataEntry] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         vBarChart.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("ajfdlkads\(typeTopic)")
         getData()
     }
     
     func getData() {
-        topics.forEach{ topic in
-            JsonHelper.mapJSONFileWithLocalOrFirebase(fileName: topic.fileName, type: topic.type) { [weak self] Words in
-                guard let strSelf = self else { return }
-                if let words = Words {
-                    words.forEach{ word in
-                        if (word.level == 1) {
-                            strSelf.level1 = strSelf.level1 + 1
-                        } else if (word.level == 2) {
-                            strSelf.level2 = strSelf.level2 + 1
-                        } else if (word.level == 3) {
-                            strSelf.level3 = strSelf.level3 + 1
-                        } else if (word.level == 4) {
-                            strSelf.level4 = strSelf.level4 + 1
-                        } else if (word.level == 5) {
-                            strSelf.level5 = strSelf.level5 + 1
-                        } else {
-                            strSelf.level0 = strSelf.level0 + 1
-                        }
-                    }
-                    if (strSelf.level1 == 0 && strSelf.level2 == 0 && strSelf.level3 == 0 && strSelf.level4 == 0 && strSelf.level5 == 0) {
-                        strSelf.isEmptyHistory = true
+        JsonHelper.mapJSONFileWithLocalOrFirebase(fileName: fileName, type: typeTopic) { [weak self] Words in
+            guard let strSelf = self else { return }
+            if let words = Words {
+                words.forEach{ word in
+                    if (word.level == 1) {
+                        strSelf.level1 = strSelf.level1 + 1
+                    } else if (word.level == 2) {
+                        strSelf.level2 = strSelf.level2 + 1
+                    } else if (word.level == 3) {
+                        strSelf.level3 = strSelf.level3 + 1
+                    } else if (word.level == 4) {
+                        strSelf.level4 = strSelf.level4 + 1
+                    } else if (word.level == 5) {
+                        strSelf.level5 = strSelf.level5 + 1
                     } else {
-                        strSelf.isEmptyHistory = false
+                        strSelf.level0 = strSelf.level0 + 1
                     }
+                }
+                if (strSelf.level1 == 0 && strSelf.level2 == 0 && strSelf.level3 == 0 && strSelf.level4 == 0 && strSelf.level5 == 0) {
+                    strSelf.isEmptyHistory = true
+                } else {
+                    strSelf.isEmptyHistory = false
                 }
             }
         }
@@ -75,13 +82,11 @@ class ReviewVC: BaseViewController {
     
     func drawChart() {
         let dataPoints = [level0, level1, level2, level3, level4, level5]
-        print("KLJAKLF\(dataPoints)")
         for i in 0..<dataPoints.count {
           let dataEntry = BarChartDataEntry(x: Double(i), y: Double(dataPoints[i]))
           dataEntries.append(dataEntry)
         }
         let chartDataSet = BarChartDataSet(entries: dataEntries, label: "")
-        chartDataSet.stackLabels = ["H", "L"]
         let chartData = BarChartData(dataSet: chartDataSet)
         vBarChart.data = chartData
     }
@@ -89,13 +94,22 @@ class ReviewVC: BaseViewController {
     func addEmptyHistoryView() {
         view.addSubview(emptyHistoryView)
         emptyHistoryView.fillSuperviewNotSafe()
+        view.sendSubviewToBack(self.emptyHistoryView)
         emptyHistoryView.delegate = self
+    }
+    
+    @IBAction func onPressDismiss(_ sender: UIButton) {
+        self.dismiss()
     }
 }
 
 
 extension ReviewVC: EmptyHistoryViewDelegate {
     func onStartLearnPress() {
-        self.tabBarController?.selectedIndex = 1
+        let trainVC = TrainingViewController()
+        trainVC.fileName = self.fileName
+        trainVC.typeTopic = self.typeTopic
+        self.present(controller: trainVC)
+//        self.tabBarController?.selectedIndex = 1
     }
 }

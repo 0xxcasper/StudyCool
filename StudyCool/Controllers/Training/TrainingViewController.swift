@@ -46,6 +46,7 @@ class TrainingViewController: BaseViewController {
             if let words = Words {
                 let tenWord = words.prefix(3) // Remove me later
                 strSelf.words = Array(tenWord) // Remove me later
+//                strSelf.words = words
                 strSelf.vLearn.word = words[strSelf.currentIndexWord]
                 strSelf.vSuccess.word = words[strSelf.currentIndexWord]
             } else {

@@ -31,7 +31,7 @@ class MainTabbar: BubbleTabBarController {
 
     func setUpViewController() {
 
-        let reviewVC = ReviewVC()
+        let reviewVC = HomeViewController()
         let reviewNC = BaseNavigationController(rootViewController: reviewVC)
         reviewNC.tabBarItem = CBTabBarItem(title: "Ôn tập từ vựng", image: #imageLiteral(resourceName: "gym"), tag: 0)
         reviewNC.navigationBar.prefersLargeTitles = true

@@ -40,6 +40,11 @@
 		843682402549075E00C8B8BF /* StudyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436823E2549075E00C8B8BF /* StudyCell.swift */; };
 		843682412549075E00C8B8BF /* StudyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8436823F2549075E00C8B8BF /* StudyCell.xib */; };
 		8436827625496EED00C8B8BF /* ielts1.json in Resources */ = {isa = PBXBuildFile; fileRef = 8436827525496EED00C8B8BF /* ielts1.json */; };
+		8436827B2549737F00C8B8BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843682792549737E00C8B8BF /* HomeViewController.swift */; };
+		8436827C2549737F00C8B8BF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8436827A2549737F00C8B8BF /* HomeViewController.xib */; };
+		84368282254974AD00C8B8BF /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84368280254974AD00C8B8BF /* HomeCell.swift */; };
+		84368283254974AD00C8B8BF /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84368281254974AD00C8B8BF /* HomeCell.xib */; };
+		8436828725497DBE00C8B8BF /* ielts2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8436828625497DBE00C8B8BF /* ielts2.json */; };
 		846353472521982E0055A750 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846353462521982E0055A750 /* WordModel.swift */; };
 		8463534A252199FF0055A750 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 84635349252199FF0055A750 /* words.json */; };
 		849B2801251D9F3C0045D15D /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B27FF251D9F3C0045D15D /* TrainingViewController.swift */; };
@@ -106,6 +111,11 @@
 		8436823E2549075E00C8B8BF /* StudyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCell.swift; sourceTree = "<group>"; };
 		8436823F2549075E00C8B8BF /* StudyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyCell.xib; sourceTree = "<group>"; };
 		8436827525496EED00C8B8BF /* ielts1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts1.json; sourceTree = "<group>"; };
+		843682792549737E00C8B8BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8436827A2549737F00C8B8BF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		84368280254974AD00C8B8BF /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		84368281254974AD00C8B8BF /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		8436828625497DBE00C8B8BF /* ielts2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts2.json; sourceTree = "<group>"; };
 		846353462521982E0055A750 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		84635349252199FF0055A750 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		849B27FF251D9F3C0045D15D /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +216,7 @@
 				25477184251C4E1300C1F4CD /* Info.plist */,
 				DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */,
 				8436827525496EED00C8B8BF /* ielts1.json */,
+				8436828625497DBE00C8B8BF /* ielts2.json */,
 			);
 			path = StudyCool;
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 		25911C0D251C563000B52872 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				843682782549736500C8B8BF /* Home */,
 				849B27FE251D9F0C0045D15D /* Training */,
 				DB2A3F87251CF20400553A60 /* Authentic */,
 				2507CB4E251C8F9E00B0D28E /* Account */,
@@ -345,6 +357,25 @@
 			children = (
 				8436823E2549075E00C8B8BF /* StudyCell.swift */,
 				8436823F2549075E00C8B8BF /* StudyCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		843682782549736500C8B8BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8436827F2549748F00C8B8BF /* Cell */,
+				843682792549737E00C8B8BF /* HomeViewController.swift */,
+				8436827A2549737F00C8B8BF /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8436827F2549748F00C8B8BF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84368280254974AD00C8B8BF /* HomeCell.swift */,
+				84368281254974AD00C8B8BF /* HomeCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -535,11 +566,14 @@
 				DB2A3F8D251CF20400553A60 /* LoginViewController.xib in Resources */,
 				25A4E120251DF4B400CD969C /* InputForm.xib in Resources */,
 				25477183251C4E1300C1F4CD /* LaunchScreen.storyboard in Resources */,
+				8436827C2549737F00C8B8BF /* HomeViewController.xib in Resources */,
 				DB2A3F96251CF9C000553A60 /* GoogleService-Info.plist in Resources */,
 				849B280E251DAB160045D15D /* LearnView.xib in Resources */,
+				84368283254974AD00C8B8BF /* HomeCell.xib in Resources */,
 				25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */,
 				849B2820251DC9590045D15D /* WordCell.xib in Resources */,
 				849B2802251D9F3C0045D15D /* TrainingViewController.xib in Resources */,
+				8436828725497DBE00C8B8BF /* ielts2.json in Resources */,
 				8463534A252199FF0055A750 /* words.json in Resources */,
 				DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */,
 				25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */,
@@ -624,6 +658,7 @@
 				DB2A3F9B251CFB2100553A60 /* Firebase.swift in Sources */,
 				255797B8251DD19B00FBC245 /* SCLAlertView.swift in Sources */,
 				25911C09251C55AF00B52872 /* LanguageHelper.swift in Sources */,
+				84368282254974AD00C8B8BF /* HomeCell.swift in Sources */,
 				849B281F251DC9590045D15D /* WordCell.swift in Sources */,
 				25911C03251C55AF00B52872 /* UITableView+Extensions.swift in Sources */,
 				25A4E11F251DF4B400CD969C /* InputForm.swift in Sources */,
@@ -638,6 +673,7 @@
 				25911C04251C55AF00B52872 /* BaseViewController.swift in Sources */,
 				25911C00251C55AF00B52872 /* UIView+Extensions.swift in Sources */,
 				846353472521982E0055A750 /* WordModel.swift in Sources */,
+				8436827B2549737F00C8B8BF /* HomeViewController.swift in Sources */,
 				25911C08251C55AF00B52872 /* BaseViewXib.swift in Sources */,
 				849B280B251DAB080045D15D /* LearnView.swift in Sources */,
 				25477179251C4E1100C1F4CD /* SceneDelegate.swift in Sources */,

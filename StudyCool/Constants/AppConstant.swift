@@ -50,5 +50,6 @@ struct Topic {
     var type: String!
 }
 
-let topics = [Topic(title: "Part - 1", image: "ielts", fileName: "ielts1", type: "ielts"),
-              Topic(title: "Part - 2", image: "ielts", fileName: "words", type: "ielts")]
+let topics = [Topic(title: "Ielts Part-1", image: "ielts", fileName: "ielts1", type: "ielts1"),
+              Topic(title: "Ielts Part-2", image: "ielts", fileName: "ielts2", type: "ielts2"),
+              Topic(title: "Ielts Part-3", image: "ielts", fileName: "words", type: "ielts")]

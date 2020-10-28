@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewVC" customModule="StudyCool" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="LdR-eV-zsu" id="MAd-HS-NU9"/>
                 <outlet property="vBarChart" destination="p61-5I-pdI" id="mWO-j0-4f0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,19 +25,34 @@
                     <rect key="frame" x="0.0" y="144" width="414" height="618"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-eV-zsu">
+                    <rect key="frame" x="16" y="52" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FHh-w2-OQU"/>
+                        <constraint firstAttribute="width" constant="30" id="a8f-WD-ZmV"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="onPressDismiss:" destination="-1" eventType="touchUpInside" id="gET-gW-Dkz"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="p61-5I-pdI" secondAttribute="bottom" constant="100" id="3U5-zd-a23"/>
+                <constraint firstItem="LdR-eV-zsu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="C3S-uX-S8t"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p61-5I-pdI" secondAttribute="trailing" id="DqQ-3c-TPy"/>
                 <constraint firstItem="p61-5I-pdI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eed-Vq-35J"/>
                 <constraint firstItem="p61-5I-pdI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Iud-Lt-IWw"/>
+                <constraint firstItem="LdR-eV-zsu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="sPX-6u-Dg2"/>
             </constraints>
             <point key="canvasLocation" x="-128.98550724637681" y="77.678571428571431"/>
         </view>
     </objects>
     <resources>
+        <image name="back" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
