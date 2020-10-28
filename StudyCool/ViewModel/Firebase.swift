@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import SVProgressHUD
+import RealmSwift
 
 struct Firebase {
     static let shared = Firebase()
@@ -67,16 +68,37 @@ struct Firebase {
         }
     }
     
+    func getDataTopicLearned(titleTopic: String,_ completion: @escaping (([WordLearned]?)->())) {
+        guard let currentId = Auth.auth().currentUser?.uid else { return }
+        let ref = Database.database().reference().child("Topics").child(currentId).child(titleTopic)
+        ref.observeSingleEvent(of: .value) { (DataSnapshot) in
+            if let jsonResult = DataSnapshot.value as? [Any] {
+                var words: [WordLearned] = []
+                jsonResult.forEach { data in
+                    let word = WordLearned(data: data as! [String : AnyObject])
+                    words.append(word)
+                }
+                completion(words)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
     func setDataTopicLearned(words: [WordModel], titleTopic: String) {
         guard let currentId = Auth.auth().currentUser?.uid else { return }
         let ref = Database.database().reference().child("Topics").child(currentId).child(titleTopic)
-        let values = ["title": titleTopic] as [String : Any]
-        ref.updateChildValues(values)
-        
-        let refWords = ref.child("words")
+       
+        let wordsLearned = List<WordLearned>()
         for word in words {
-            refWords.child("\(word.id ?? 0)").setValue(["id" : word.id ?? 0, "learnLevel": word.learnLevel, "listenRight": word.listenLevel, "writeLevel": word.writeLevel])
+            // Save Firebase
+            let level = (word.listened && word.writen) ? word.level + 1 : word.level
+            ref.child("\(word.id ?? 0)").updateChildValues(["id" : word.id ?? 0, "level": level ?? 0])
+            // Save Local
+            let wordLearned = WordLearned(id: word.id ?? 0, level: level ?? 0)
+            wordsLearned.append(wordLearned)
         }
+        TopicWordLearned.add(name: titleTopic, item: TopicWordLearned(words: wordsLearned, name: titleTopic))
     }
 }
 

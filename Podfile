@@ -12,5 +12,9 @@ target 'StudyCool' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  
+  pod 'RealmSwift'
+  pod 'Charts'
+  
 #  pod 'Firebase/MLNLTranslate'
 end

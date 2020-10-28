@@ -41,3 +41,14 @@ let EMAIL                   = "email"
 //NOTIFICATION KEY
 let KNET_STATUS             = "K_NET_STATUS"
 
+//ALL TOPIC
+
+struct Topic {
+    var title: String!
+    var image: String!
+    var fileName: String!
+    var type: String!
+}
+
+let topics = [Topic(title: "Part - 1", image: "ielts", fileName: "ielts1", type: "ielts"),
+              Topic(title: "Part - 2", image: "ielts", fileName: "words", type: "ielts")]
