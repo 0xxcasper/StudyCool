@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewVC" customModule="StudyCool" customModuleProvider="target">
             <connections>
+                <outlet property="barChart" destination="p61-5I-pdI" id="M31-eg-xkr"/>
                 <outlet property="btnBack" destination="LdR-eV-zsu" id="MAd-HS-NU9"/>
-                <outlet property="vBarChart" destination="p61-5I-pdI" id="mWO-j0-4f0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,9 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p61-5I-pdI" customClass="BarChartView" customModule="Charts">
-                    <rect key="frame" x="0.0" y="144" width="414" height="618"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p61-5I-pdI" customClass="MSBBarChartView" customModule="MSBBarChart">
+                    <rect key="frame" x="16" y="112" width="382" height="380"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="380" id="5JV-WV-YYn"/>
+                    </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-eV-zsu">
                     <rect key="frame" x="16" y="52" width="30" height="30"/>
@@ -41,11 +44,10 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="p61-5I-pdI" secondAttribute="bottom" constant="100" id="3U5-zd-a23"/>
+                <constraint firstItem="p61-5I-pdI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2C0-Fz-P7J"/>
+                <constraint firstItem="p61-5I-pdI" firstAttribute="top" secondItem="LdR-eV-zsu" secondAttribute="bottom" constant="30" id="5km-rH-Pyy"/>
                 <constraint firstItem="LdR-eV-zsu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="C3S-uX-S8t"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p61-5I-pdI" secondAttribute="trailing" id="DqQ-3c-TPy"/>
-                <constraint firstItem="p61-5I-pdI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eed-Vq-35J"/>
-                <constraint firstItem="p61-5I-pdI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Iud-Lt-IWw"/>
+                <constraint firstAttribute="trailing" secondItem="p61-5I-pdI" secondAttribute="trailing" constant="16" id="hoG-2x-tqw"/>
                 <constraint firstItem="LdR-eV-zsu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="sPX-6u-Dg2"/>
             </constraints>
             <point key="canvasLocation" x="-128.98550724637681" y="77.678571428571431"/>

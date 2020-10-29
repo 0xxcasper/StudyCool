@@ -34,13 +34,12 @@ class MainTabbar: BubbleTabBarController {
         let reviewVC = HomeViewController()
         let reviewNC = BaseNavigationController(rootViewController: reviewVC)
         reviewNC.tabBarItem = CBTabBarItem(title: "Ôn tập từ vựng", image: #imageLiteral(resourceName: "gym"), tag: 0)
-        reviewNC.navigationBar.prefersLargeTitles = true
+        reviewNC.navigationBar.prefersLargeTitles = false
         
         let studyVC = StudyVC()
         let studyNC = BaseNavigationController(rootViewController: studyVC)
         studyVC.tabBarItem = UITabBarItem(title: "Học từ vựng", image: #imageLiteral(resourceName: "learn"), tag: 1)
-        studyNC.navigationBar.prefersLargeTitles = true
-        studyNC.navigationBar.isHidden = true
+        studyNC.navigationBar.prefersLargeTitles = false
 
         let accountVC = AccountVC()
         let accountNC = BaseNavigationController(rootViewController: accountVC)
