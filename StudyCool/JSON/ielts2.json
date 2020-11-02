@@ -1,0 +1,94 @@
+{
+    "ielts2": [
+        {
+            "id": 11,
+            "word": "ageing",
+            "mean": "sự lão hóa",
+            "pronunciation": "/ˈeɪdʒɪŋ/",
+            "sentence": "signs of ageing",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 12,
+            "word": "alternative",
+            "mean": "sự lựa chọn",
+            "pronunciation": "/ɔːlˈtɜːnətɪv/",
+            "sentence": "We had no alternative but to go forward.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 13,
+            "word": " analyse",
+            "mean": "phân tích",
+            "pronunciation": "/ˈænəlaɪz/",
+            "sentence": "The job involves gathering and analysing data",
+            "nb_repeat": 1,
+            "next_time": 1600587193
+        },
+        {
+            "id": 14,
+            "word": "appreciate",
+            "mean": " đánh giá đúng, đánh giá cao",
+            "pronunciation": "/əˈpriːʃieɪt/",
+            "sentence": "Those who appreciate fine wine will enjoy reading the restaurant's wine list",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 15,
+            "word": "artificial",
+            "mean": "nhân tạo (không phải xảy ra tự nhiên)",
+            "pronunciation": "/ˌɑːtɪˈfɪʃəl/",
+            "sentence": " We have to go through some artificial situations first.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 16,
+            "word": "aspect",
+            "mean": "khía cạnh; mặt",
+            "pronunciation": "/ˈæspekt/",
+            "sentence": "The night-life is my favourite aspect of this city.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 17,
+            "word": "assess",
+            "mean": " đánh giá",
+            "pronunciation": "/əˈses/",
+            "sentence": "After the hurricane, officials assessed the town's need for aid.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 18,
+            "word": "asset",
+            "mean": "của cải, tài sản",
+            "pronunciation": "/ˈæset/",
+            "sentence": "Her lips are her best asset.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 19,
+            "word": "accept",
+            "mean": "nhận, chấp nhận,chịu trách nhiệm,hoan nghênh, tán thưởng",
+            "pronunciation": " /ək'sept/ ",
+            "sentence": "will you accept a cheque?",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 20,
+            "word": " assignment",
+            "mean": "việc được giao, nhiệm vụ",
+            "pronunciation": "/əˈsaɪnmənt/",
+            "sentence": "You will need to complete three written assignments per semester.",
+            "nb_repeat": 0,
+            "next_time": 0
+        }
+    ]
+}

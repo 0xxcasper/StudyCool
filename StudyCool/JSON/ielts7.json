@@ -1,0 +1,95 @@
+{
+    "ielts7": [
+        {
+            "id": 61,
+            "word": "cure",
+            "mean": "chữa trị",
+            "pronunciation": "/kjʊər/",
+            "sentence": " Will you be able to cure him, Doctor?",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 62,
+            "word": "decent",
+            "mean": " trung thực, công bằng; đứng đắn",
+            "pronunciation": "/ˈdiːsənt/",
+            "sentence": "Your decent behaviours are much approved.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 63,
+            "word": "decline",
+            "mean": " sự suy giảm",
+            "pronunciation": "/dɪˈklaɪn/",
+            "sentence": "a rapid/sharp/gradual decline",
+            "nb_repeat": 1,
+            "next_time": 1600584970
+        },
+        {
+            "id": 64,
+            "word": "deliver",
+            "mean": " thực hiện bài diễn văn/bài nói chuyện/công bố nào đó",
+            "pronunciation": "/dɪˈlɪvər/",
+            "sentence": "She is due to deliver a lecture on genetic engineering.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 65,
+            "word": "demanding",
+            "mean": "khó tính, đòi hỏi khắt khe",
+            "pronunciation": "/dɪˈmɑːndɪŋ/",
+            "sentence": " a demanding boss/child",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 66,
+            "word": "demonstrate",
+            "mean": "chứng minh, giải thích",
+            "pronunciation": "/ˈdemənstreɪt/",
+            "sentence": "The group's failed efforts demonstrate how difficult it is to convince people to change their habits.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 67,
+            "word": "depression",
+            "mean": " chứng trầm cảm",
+            "pronunciation": "/dɪˈpreʃən/",
+            "sentence": "She suffered from severe depression after losing her job.",
+            "nb_repeat": 1,
+            "next_time": 1600584086
+        },
+        {
+            "id": 68,
+            "word": "design",
+            "mean": "thiết kế, ngành thiết kế",
+            "pronunciation": "/dɪˈzaɪn/",
+            "sentence": " a course in art and design",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 69,
+            "word": "destination",
+            "mean": " nơi đến, đích đến",
+            "pronunciation": "/ˌdestɪˈneɪʃən/",
+            "sentence": "popular holiday destinations like the Bahamas",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 70,
+            "word": "determination",
+            "mean": "sự/lòng quyết tâm",
+            "pronunciation": "/dɪˌtɜːmɪˈneɪʃən/",
+            "sentence": "fierce/grim/dogged determination",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+    ]
+}
+

@@ -1,0 +1,94 @@
+{
+    "ielts6": [
+        {
+            "id": 51,
+            "word": "consistent",
+            "mean": "kiên định, nhất quán",
+            "pronunciation": "/kənˈsɪstənt/",
+            "sentence": "The university has a consistent approach to addressing sexual violence on campuses.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 52,
+            "word": "construct",
+            "mean": " xây dựng",
+            "pronunciation": "/kənˈstrʌkt/",
+            "sentence": " When was the bridge constructed?",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 53,
+            "word": "contribute",
+            "mean": "đóng góp, góp phần",
+            "pronunciation": "/kənˈtrɪbjuːt/",
+            "sentence": "The volunteers contributed their time towards cleaning up the city.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 54,
+            "word": "controversial",
+            "mean": " gây tranh cãi, bàn luận",
+            "pronunciation": "/ˌkɒntrəˈvɜːʃəl/",
+            "sentence": "It is, however, a highly controversial measure.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 55,
+            "word": "convert",
+            "mean": "chuyển đổi, biến đổi",
+            "pronunciation": "/kənˈvɜːt/",
+            "sentence": "The hotel is going to be converted into a nursing home.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 56,
+            "word": "cope",
+            "mean": " đối phó, đương đầu thành công (với một điều gì đó khó khăn)",
+            "pronunciation": "/kəʊp/",
+            "sentence": "I got to the stage where I wasn't coping any more.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 57,
+            "word": "correspondence",
+            "mean": " sự tương ứng, sự phù hợp",
+            "pronunciation": "/ˌkɒrɪˈspɒndəns/",
+            "sentence": "There is a close correspondence between the two extracts.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 58,
+            "word": " coverage",
+            "mean": " việc đưa tin về những sự kiện (báo chí, radio, tv...)",
+            "pronunciation": "/ˈkʌvərɪdʒ/",
+            "sentence": " media/newspaper/press coverage",
+            "nb_repeat": 1,
+            "next_time": 1600584760
+        },
+        {
+            "id": 59,
+            "word": "criminal",
+            "mean": "tội phạm",
+            "pronunciation": "/ˈkrɪmɪnəl/",
+            "sentence": "Everyone is scared of hardened criminals.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 60,
+            "word": "crowded",
+            "mean": " đông đúc",
+            "pronunciation": "/ˈkraʊdɪd/",
+            "sentence": "crowded streets",
+            "nb_repeat": 0,
+            "next_time": 0
+        }
+    ]
+}

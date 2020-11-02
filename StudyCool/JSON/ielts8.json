@@ -1,0 +1,95 @@
+{
+    "ielts8": [
+        {
+            "id": 71,
+            "word": "develop",
+            "mean": "phát triển, nảy nở",
+            "pronunciation": "/dɪˈveləp/",
+            "sentence": "He's developed a real flair for management.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 72,
+            "word": "device",
+            "mean": "thiết bị, máy móc",
+            "pronunciation": "/dɪˈvaɪs/",
+            "sentence": "A smartphone is a device that everyone loves.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 73,
+            "word": "digital",
+            "mean": " kĩ thuật số",
+            "pronunciation": "/ˈdɪdʒɪtəl/",
+            "sentence": "This phone is an excellent product of the digital age.",
+            "nb_repeat": 1,
+            "next_time": 1600600109
+        },
+        {
+            "id": 74,
+            "word": " dilemma",
+            "mean": "tình trạng khó xử",
+            "pronunciation": "/dɪˈlemə/",
+            "sentence": " to face a dilemma",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 75,
+            "word": "discharge",
+            "mean": "thải ra, đổ ra",
+            "pronunciation": "/dɪsˈtʃɑːdʒ/",
+            "sentence": "he river is diverted through the power station before discharging into the sea.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 76,
+            "word": "discipline",
+            "mean": "kỉ luật, tính kỉ luật",
+            "pronunciation": "/ˈdɪsəplɪn/",
+            "sentence": "You have to learn hard work and discipline.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 77,
+            "word": "distinguish",
+            "mean": " phân biệt",
+            "pronunciation": "/dɪˈstɪŋɡwɪʃ/",
+            "sentence": "At what age are children able to distinguish between right and wrong?",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 78,
+            "word": "diversity",
+            "mean": "sự đa dạng",
+            "pronunciation": "/daɪˈvɜːsəti/",
+            "sentence": "Racial and ethnic diversity is spreading far beyond the coasts and into surprising places across the USA.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 79,
+            "word": "doubtful",
+            "mean": "không chắc chắn, nghi ngờ",
+            "pronunciation": "/ˈdaʊtfəl/",
+            "sentence": "Rose was doubtful about the whole idea.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 80,
+            "word": "drive",
+            "mean": "khiến ai tức giận/nổi điên; khiến ai làm điều gì tồi tệ",
+            "pronunciation": "/draɪv/",
+            "sentence": " to drive somebody crazy/mad/insane",
+            "nb_repeat": 0,
+            "next_time": 0
+        }
+    ]
+}
+

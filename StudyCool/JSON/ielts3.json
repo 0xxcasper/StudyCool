@@ -1,0 +1,94 @@
+{
+    "ielts3": [
+        {
+            "id": 21,
+            "word": "assist",
+            "mean": "giúp đỡ, hỗ trợ",
+            "pronunciation": "/əˈsɪst/",
+            "sentence": "Federal agents are assisting with the investigation.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 22,
+            "word": "atmosphere",
+            "mean": " bầu không khí (nghĩa bóng)",
+            "pronunciation": "/ˈætməsfɪər/",
+            "sentence": " This restaurant has a warm atmosphere",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 23,
+            "word": "attitude",
+            "mean": "thái độ, quan điểm",
+            "pronunciation": "/ˈætɪtjuːd/",
+            "sentence": " It's a personal matter whether you choose stock from this company or from that because in the end it's an attitude of mind.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 24,
+            "word": "automatic",
+            "mean": "tự động",
+            "pronunciation": "/ˌɔːtəˈmætɪk/",
+            "sentence": "Automatic cars aren't liked by many men.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 25,
+            "word": "balance",
+            "mean": "sự cân bằng",
+            "pronunciation": "/ˈbæləns/",
+            "sentence": "This newspaper maintains a good balance in its presentation of different opinions.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 26,
+            "word": "ban",
+            "mean": " (luật pháp) cấm",
+            "pronunciation": "/bæn/",
+            "sentence": "Chemical weapons are banned internationally.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 27,
+            "word": "barrier",
+            "mean": "rào cản (nghĩa bóng), trở ngại",
+            "pronunciation": "/ˈbæriər/",
+            "sentence": "the removal of trade barriers.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 28,
+            "word": "beneficial",
+            "mean": " có ích, có lợi",
+            "pronunciation": "/ˌbenɪˈfɪʃəl/",
+            "sentence": "A good diet is beneficial to health.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 29,
+            "word": "bias",
+            "mean": " thành kiến, thiên vị",
+            "pronunciation": "/ˈbaɪəs/",
+            "sentence": "accusations of political bias in news programmes (= that reports are unfair and show favour to one political party)",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 30,
+            "word": "boom",
+            "mean": "phất lên(công việc buôn bán...), phát đạt",
+            "pronunciation": "/buːm/",
+            "sentence": "By the 1980s, the computer industry was booming.",
+            "nb_repeat": 0,
+            "next_time": 0
+        }
+    ]
+}

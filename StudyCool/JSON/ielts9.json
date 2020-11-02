@@ -1,0 +1,95 @@
+{
+    "ielts9": [
+        {
+            "id": 81,
+            "word": "earn",
+            "mean": "có/đạt được điều gì (một cách xứng đáng)",
+            "pronunciation": "/ɜːn/",
+            "sentence": "He earned a reputation as an expert on tax law.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 82,
+            "word": "ease",
+            "mean": "giảm, xoa dịu",
+            "pronunciation": "/iːz/",
+            "sentence": "The pain immediately eased.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 83,
+            "word": "eligible",
+            "mean": "đủ tư cách, thích hợp",
+            "pronunciation": "/ˈelɪdʒəbl/",
+            "sentence": "Only people over 18 are eligible to vote.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 84,
+            "word": " embrace",
+            "mean": "chấp nhận (ý tưởng, đề nghị, hệ tư tưởng,...)",
+            "pronunciation": "/ɪmˈbreɪs/",
+            "sentence": "to embrace democracy/feminism/Islam",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 85,
+            "word": "emerge",
+            "mean": " nổi lên, được biết đến",
+            "pronunciation": "/ɪˈmɜːdʒ/",
+            "sentence": "After the elections opposition groups began to emerge.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 86,
+            "word": "emission",
+            "mean": "chất thải phát ra (khí, gas, ...)",
+            "pronunciation": "/ɪˈmɪʃən/",
+            "sentence": "The government has pledged to clean up industrial emissions.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 87,
+            "word": " empirical",
+            "mean": "theo kinh nghiệm, thực tiễn",
+            "pronunciation": "/ɪmˈpɪrɪkəl/",
+            "sentence": "empirical evidence/knowledge/research",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 88,
+            "word": "engage",
+            "mean": "thu hút (sự chú ý...), giành được (tình cảm...)",
+            "pronunciation": "/ɪnˈɡeɪdʒ/",
+            "sentence": " It is a movie that engages both the mind and the eye.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 89,
+            "word": "enhance",
+            "mean": " nâng cao, làm nổi bật (đức tính, quyền hạn...)",
+            "pronunciation": "/ɪnˈhɑːns/",
+            "sentence": "This is an opportunity to enhance the reputation of the company.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 90,
+            "word": "enjoy",
+            "mean": " hưởng thụ",
+            "pronunciation": "/ɪnˈdʒɔɪ/",
+            "sentence": "People in this country enjoy a high standard of living.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+    ]
+}
+

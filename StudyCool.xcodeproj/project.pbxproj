@@ -73,6 +73,13 @@
 		DB2A3F9E251E482F00553A60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3F9D251E482F00553A60 /* UserModel.swift */; };
 		DB2A3FA2251E528D00553A60 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3FA0251E528D00553A60 /* Reachability.swift */; };
 		DB2A3FA4251E52B000553A60 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A3FA3251E52B000553A60 /* ConnectionManager.swift */; };
+		DBED07EF255063FE00FADD23 /* ielts3.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07EE255063FE00FADD23 /* ielts3.json */; };
+		DBED07F12550644B00FADD23 /* ielts4.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07F02550644B00FADD23 /* ielts4.json */; };
+		DBED07F32550649800FADD23 /* ielts5.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07F22550649800FADD23 /* ielts5.json */; };
+		DBED07F5255064E100FADD23 /* ielts6.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07F4255064E100FADD23 /* ielts6.json */; };
+		DBED07F72550655E00FADD23 /* ielts7.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07F62550655E00FADD23 /* ielts7.json */; };
+		DBED07F9255065BF00FADD23 /* ielts8.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07F8255065BF00FADD23 /* ielts8.json */; };
+		DBED07FB255065CE00FADD23 /* ielts9.json in Resources */ = {isa = PBXBuildFile; fileRef = DBED07FA255065CE00FADD23 /* ielts9.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +153,13 @@
 		DB2A3FA0251E528D00553A60 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		DB2A3FA1251E528D00553A60 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DB2A3FA3251E52B000553A60 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		DBED07EE255063FE00FADD23 /* ielts3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts3.json; sourceTree = "<group>"; };
+		DBED07F02550644B00FADD23 /* ielts4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts4.json; sourceTree = "<group>"; };
+		DBED07F22550649800FADD23 /* ielts5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts5.json; sourceTree = "<group>"; };
+		DBED07F4255064E100FADD23 /* ielts6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts6.json; sourceTree = "<group>"; };
+		DBED07F62550655E00FADD23 /* ielts7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts7.json; sourceTree = "<group>"; };
+		DBED07F8255065BF00FADD23 /* ielts8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts8.json; sourceTree = "<group>"; };
+		DBED07FA255065CE00FADD23 /* ielts9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ielts9.json; sourceTree = "<group>"; };
 		F95EE275EC73A2AF075E8D48 /* Pods-StudyCool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCool.debug.xcconfig"; path = "Target Support Files/Pods-StudyCool/Pods-StudyCool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				25477176251C4E1100C1F4CD /* AppDelegate.swift */,
+				DBED07ED25505FDC00FADD23 /* JSON */,
 				DB2A3F9C251E481A00553A60 /* Models */,
 				DB2A3F97251CFAC200553A60 /* ViewModel */,
 				DB2A3F90251CF2D900553A60 /* Utilities */,
@@ -215,8 +230,6 @@
 				25477181251C4E1300C1F4CD /* LaunchScreen.storyboard */,
 				25477184251C4E1300C1F4CD /* Info.plist */,
 				DB2A3F95251CF9C000553A60 /* GoogleService-Info.plist */,
-				8436827525496EED00C8B8BF /* ielts1.json */,
-				8436828625497DBE00C8B8BF /* ielts2.json */,
 			);
 			path = StudyCool;
 			sourceTree = "<group>";
@@ -493,6 +506,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		DBED07ED25505FDC00FADD23 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8436827525496EED00C8B8BF /* ielts1.json */,
+				8436828625497DBE00C8B8BF /* ielts2.json */,
+				DBED07EE255063FE00FADD23 /* ielts3.json */,
+				DBED07F02550644B00FADD23 /* ielts4.json */,
+				DBED07F22550649800FADD23 /* ielts5.json */,
+				DBED07F4255064E100FADD23 /* ielts6.json */,
+				DBED07F62550655E00FADD23 /* ielts7.json */,
+				DBED07F8255065BF00FADD23 /* ielts8.json */,
+				DBED07FA255065CE00FADD23 /* ielts9.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		FE80BB3308857DACB1BE1A91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,11 +600,18 @@
 				849B280E251DAB160045D15D /* LearnView.xib in Resources */,
 				84368283254974AD00C8B8BF /* HomeCell.xib in Resources */,
 				25BECCAC251CA292004D57CC /* EmptyHistoryView.xib in Resources */,
+				DBED07F32550649800FADD23 /* ielts5.json in Resources */,
 				849B2820251DC9590045D15D /* WordCell.xib in Resources */,
+				DBED07F12550644B00FADD23 /* ielts4.json in Resources */,
 				849B2802251D9F3C0045D15D /* TrainingViewController.xib in Resources */,
 				8436828725497DBE00C8B8BF /* ielts2.json in Resources */,
+				DBED07F9255065BF00FADD23 /* ielts8.json in Resources */,
 				8463534A252199FF0055A750 /* words.json in Resources */,
 				DB2A3F8C251CF20400553A60 /* RegisterViewController.xib in Resources */,
+				DBED07EF255063FE00FADD23 /* ielts3.json in Resources */,
+				DBED07F5255064E100FADD23 /* ielts6.json in Resources */,
+				DBED07F72550655E00FADD23 /* ielts7.json in Resources */,
+				DBED07FB255065CE00FADD23 /* ielts9.json in Resources */,
 				25911C1E251C5AF500B52872 /* ReviewVC.xib in Resources */,
 				84AED9962522DFC0001A83F0 /* SuccessView.xib in Resources */,
 				849B281A251DC48B0045D15D /* WriteView.xib in Resources */,

@@ -15,6 +15,9 @@ class SuccessView: BaseViewXib {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblExample: UILabel!
     
+    override func firstInit() {
+        vBG.layer.cornerRadius = 15
+    }
     var word: WordModel?{
         didSet{
             if word != nil {

@@ -52,4 +52,11 @@ struct Topic {
 
 let topics = [Topic(title: "Ielts Part-1", image: "ielts", fileName: "ielts1", type: "ielts1"),
               Topic(title: "Ielts Part-2", image: "ielts", fileName: "ielts2", type: "ielts2"),
-              Topic(title: "Ielts Part-3", image: "ielts", fileName: "words", type: "ielts")]
+              Topic(title: "Ielts Part-3", image: "ielts", fileName: "ielts3", type: "ielts3"),
+              Topic(title: "Ielts Part-4", image: "ielts", fileName: "ielts4", type: "ielts4"),
+              Topic(title: "Ielts Part-5", image: "ielts", fileName: "ielts5", type: "ielts5"),
+              Topic(title: "Ielts Part-6", image: "ielts", fileName: "ielts6", type: "ielts6"),
+              Topic(title: "Ielts Part-7", image: "ielts", fileName: "ielts7", type: "ielts7"),
+              Topic(title: "Ielts Part-8", image: "ielts", fileName: "ielts8", type: "ielts8"),
+              Topic(title: "Ielts Part-9", image: "ielts", fileName: "ielts9", type: "ielts9")
+]

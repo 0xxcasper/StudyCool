@@ -1,0 +1,94 @@
+{
+    "ielts4": [
+        {
+            "id": 31,
+            "word": "bound",
+            "mean": "chắc chắn hoặc có khả năng (xảy ra, thực hiện...)",
+            "pronunciation": "/baʊnd/",
+            "sentence": "There are bound to be changes when the new system is introduced.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 32,
+            "word": "brand",
+            "mean": "thương hiệu (hàng hoá)",
+            "pronunciation": "/brænd/",
+            "sentence": " Brand loyalty is extremely important in the fine beverages industry.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 33,
+            "word": "budget",
+            "mean": "ngân sách, ngân quỹ",
+            "pronunciation": "",
+            "sentence": "We have a monthly budget of $20000.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 34,
+            "word": "burden",
+            "mean": "gánh nặng (nghĩa bóng)",
+            "pronunciation": "/ˈbɜːdən/",
+            "sentence": "Payments for the two cars are a burden on the family's resources.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 35,
+            "word": "casual",
+            "mean": "không trịnh trọng, thông thường",
+            "pronunciation": "/ˈkæʒjuəl/",
+            "sentence": "We don't allow people with casual clothes into the building.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 36,
+            "word": "casualty",
+            "mean": "nạn nhân, thương vong (chiến tranh, tai nạn)",
+            "pronunciation": "/ˈkæʒjuəlti/",
+            "sentence": " road casualties",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 37,
+            "word": "challenge",
+            "mean": "thách thức",
+            "pronunciation": "/ˈtʃælɪndʒ/",
+            "sentence": "We teach students how to face a challenge.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 38,
+            "word": "chronic",
+            "mean": "xảy ra trong một thời gian dài; ăn sâu (khó loại bỏ)",
+            "pronunciation": "/ˈkrɒnɪk/",
+            "sentence": "chronic bronchitis/arthritis/asthma",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 39,
+            "word": "cognitive",
+            "mean": "liên quan đến nhận thức",
+            "pronunciation": "/ˈkɒɡnətɪv/",
+            "sentence": " a child's cognitive development",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 40,
+            "word": "communicate",
+            "mean": "giao tiếp",
+            "pronunciation": "/kəˈmjuːnɪkeɪt/",
+            "sentence": " He was asked to communicate the news to the rest of the people.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "ielts5": [
+        {
+            "id": 41,
+            "word": "compete",
+            "mean": "cạnh tranh, ganh đua",
+            "pronunciation": "/kəmˈpiːt/",
+            "sentence": "She competed against students from around the country.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 42,
+            "word": "competitive",
+            "mean": "mang tính cạnh tranh",
+            "pronunciation": "/kəmˈpetɪtɪv/",
+            "sentence": "t's hard to get a job in this competitive job market.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 43,
+            "word": "complicated",
+            "mean": "phức tạp, rắc rối",
+            "pronunciation": "/ˈkɒmplɪkeɪtɪd/",
+            "sentence": " I had a hard time understanding this complicated story.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 44,
+            "word": "compound",
+            "mean": "hợp chất",
+            "pronunciation": "/ˈkɒmpaʊnd/",
+            "sentence": "Common salt is a compound of sodium and chlorine.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 45,
+            "word": "compromise",
+            "mean": " sự thoả hiệp",
+            "pronunciation": "/ˈkɒmprəmaɪz/",
+            "sentence": "In any relationship, you have to make compromises.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 46,
+            "word": " concept",
+            "mean": " khái niệm",
+            "pronunciation": "/ˈkɒnsept/",
+            "sentence": "Can animals grasp the concept of time?",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 47,
+            "word": "conclude",
+            "mean": "kết luận",
+            "pronunciation": "/kənˈkluːd/",
+            "sentence": "What do you conclude from that?",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 48,
+            "word": "concrete",
+            "mean": "cụ thể",
+            "pronunciation": "/ˈkɒŋkriːt/",
+            "sentence": " Nothing concrete was made about the case.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 49,
+            "word": "conduct",
+            "mean": "tiến hành",
+            "pronunciation": "/kənˈdʌkt/",
+            "sentence": "The committee will conduct an inquiry into the governor's alleged fraud.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+        {
+            "id": 50,
+            "word": "connection",
+            "mean": "sự liên hệ",
+            "pronunciation": "/kəˈnekʃən/",
+            "sentence": "Scientists have established a connection between cholesterol levels and heart disease.",
+            "nb_repeat": 0,
+            "next_time": 0
+        },
+
+    ]
+}
