@@ -26,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_profile" translatesAutoresizingMaskIntoConstraints="NO" id="BDv-G3-dni">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="522"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-ZS-ypd">
                     <rect key="frame" x="10" y="3" width="30" height="30"/>
@@ -93,7 +93,7 @@
                             <real key="value" value="4"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                            <color key="value" red="0.91921168565750122" green="0.53123583590884405" blue="0.42316639489751456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="value" red="0.98039215686274506" green="0.50588235294117645" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
                             <color key="value" systemColor="systemRedColor"/>
@@ -112,6 +112,7 @@
                 <constraint firstItem="kSg-YH-ice" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="9d4-33-tm3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sA7-Hq-0jl" secondAttribute="bottom" constant="150" id="F38-rb-86d"/>
                 <constraint firstItem="1Xh-ZS-ypd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Gmx-aI-6ci"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BDv-G3-dni" secondAttribute="bottom" id="GsV-Lp-lPl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kSg-YH-ice" secondAttribute="trailing" constant="40" id="KvD-H0-zhI"/>
                 <constraint firstItem="BDv-G3-dni" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NiD-Ae-V5r"/>
                 <constraint firstItem="QPE-ub-MUg" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="QTq-jD-Jlv"/>
@@ -121,7 +122,6 @@
                 <constraint firstItem="Llk-sR-MNN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XdQ-9T-ok6"/>
                 <constraint firstItem="0Mu-qB-ECy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="bdf-5r-2gp"/>
                 <constraint firstItem="0Mu-qB-ECy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eOl-Av-ssj"/>
-                <constraint firstItem="hZG-AH-vh1" firstAttribute="top" secondItem="BDv-G3-dni" secondAttribute="bottom" constant="40" id="egR-26-zvc"/>
                 <constraint firstItem="kSg-YH-ice" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="f4h-G4-rsr"/>
                 <constraint firstItem="0Mu-qB-ECy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="ipl-14-pda"/>
                 <constraint firstItem="sA7-Hq-0jl" firstAttribute="top" secondItem="0Mu-qB-ECy" secondAttribute="bottom" constant="20" id="irs-DD-NkR"/>

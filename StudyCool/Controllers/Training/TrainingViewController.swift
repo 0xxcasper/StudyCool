@@ -90,8 +90,8 @@ class TrainingViewController: BaseViewController {
     private func setAbleButtonCheck(isEnable: Bool) {
         btnCheck.isEnabled = isEnable
         if (isEnable) {
-            btnCheck.gradientStartColor = .orange
-            btnCheck.gradientEndColor = .purple
+            btnCheck.gradientStartColor = UIColor(rgb: 0xFA8165)
+            btnCheck.gradientEndColor = UIColor(rgb: 0xFF3B30)
         } else {
             btnCheck.gradientStartColor = .gray
             btnCheck.gradientEndColor = .gray

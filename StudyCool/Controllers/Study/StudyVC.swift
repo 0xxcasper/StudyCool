@@ -48,7 +48,7 @@ extension StudyVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+        return UIEdgeInsets(top: 8, left: 16, bottom: 16, right: 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
