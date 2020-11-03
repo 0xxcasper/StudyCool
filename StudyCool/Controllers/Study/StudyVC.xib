@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IgV-kw-cZq">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uP2-uT-sw4">
                         <size key="itemSize" width="128" height="128"/>
@@ -30,14 +31,15 @@
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="Mcj-Ph-dDa"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="IgV-kw-cZq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9b4-Ik-YrR"/>
-                <constraint firstItem="IgV-kw-cZq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mdh-Cj-pC6"/>
-                <constraint firstAttribute="trailing" secondItem="IgV-kw-cZq" secondAttribute="trailing" id="pTJ-9Y-P6d"/>
-                <constraint firstAttribute="bottom" secondItem="IgV-kw-cZq" secondAttribute="bottom" id="xsZ-e7-Gpl"/>
+                <constraint firstItem="IgV-kw-cZq" firstAttribute="leading" secondItem="Mcj-Ph-dDa" secondAttribute="leading" id="7Pr-ER-Te8"/>
+                <constraint firstItem="Mcj-Ph-dDa" firstAttribute="bottom" secondItem="IgV-kw-cZq" secondAttribute="bottom" id="C4d-6z-QZm"/>
+                <constraint firstItem="IgV-kw-cZq" firstAttribute="trailing" secondItem="Mcj-Ph-dDa" secondAttribute="trailing" id="gr5-Ei-bo9"/>
+                <constraint firstItem="IgV-kw-cZq" firstAttribute="top" secondItem="Mcj-Ph-dDa" secondAttribute="top" id="oa8-Cl-hMl"/>
             </constraints>
-            <point key="canvasLocation" x="129" y="104"/>
+            <point key="canvasLocation" x="128.98550724637681" y="103.79464285714285"/>
         </view>
     </objects>
     <resources>

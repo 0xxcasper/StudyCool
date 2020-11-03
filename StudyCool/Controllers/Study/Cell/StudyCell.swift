@@ -19,7 +19,9 @@ class StudyCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.setShadow(color: UIColor.gray, offSet: CGSize(width: 0, height: 2))
+        self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        self.layer.cornerRadius = 10
+        self.setShadow(color: #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1), opacity: 0.2, offSet: CGSize(width: 0, height: 0), radius: 3)
     }
 
 }

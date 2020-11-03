@@ -17,15 +17,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="161" height="187"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9SQ-qv-3sT">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9SQ-qv-3sT">
                         <rect key="frame" x="0.0" y="0.0" width="161" height="161"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="9SQ-qv-3sT" secondAttribute="height" id="tmg-b9-HsP"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH6-Er-cqc">
-                        <rect key="frame" x="0.0" y="161" width="161" height="26"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <rect key="frame" x="0.0" y="161" width="161" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="zX9-E4-eZm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>

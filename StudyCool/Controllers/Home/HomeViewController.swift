@@ -16,8 +16,14 @@ class HomeViewController: BaseViewController, UITableViewDataSource, UITableView
         setUpView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.tintColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+    }
+    
     func setUpView() {
         tbView.registerXibFile(HomeCell.self)
+        tbView.separatorStyle = .none
         tbView.dataSource = self
         tbView.delegate = self
     }

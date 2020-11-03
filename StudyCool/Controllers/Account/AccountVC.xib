@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,27 +27,17 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3h-Y2-hLM">
-                    <rect key="frame" x="60" y="305.5" width="294" height="295"/>
+                    <rect key="frame" x="60" y="260.5" width="294" height="275"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="EfC-OE-g2N">
-                            <rect key="frame" x="77" y="-65" width="140" height="140"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="140" id="5Q7-EH-cDe"/>
-                                <constraint firstAttribute="width" secondItem="EfC-OE-g2N" secondAttribute="height" id="iHq-16-oqd"/>
-                            </constraints>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_avt" translatesAutoresizingMaskIntoConstraints="NO" id="OzH-ff-rYM">
-                            <rect key="frame" x="92" y="-50" width="110" height="110"/>
-                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-AO-BsM" customClass="InputForm" customModule="StudyCool" customModuleProvider="target">
-                            <rect key="frame" x="30" y="95" width="234" height="70"/>
+                            <rect key="frame" x="30" y="55" width="234" height="70"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="70" id="bKd-bG-evS"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzJ-Rv-nqw" customClass="InputForm" customModule="StudyCool" customModuleProvider="target">
-                            <rect key="frame" x="30" y="185" width="234" height="70"/>
+                            <rect key="frame" x="30" y="150" width="234" height="70"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="70" id="RXp-OK-i36"/>
@@ -56,23 +46,17 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="TzJ-Rv-nqw" secondAttribute="bottom" constant="40" id="6rB-uh-Hke"/>
+                        <constraint firstAttribute="bottom" secondItem="TzJ-Rv-nqw" secondAttribute="bottom" constant="55" id="6rB-uh-Hke"/>
                         <constraint firstItem="TzJ-Rv-nqw" firstAttribute="trailing" secondItem="O7t-AO-BsM" secondAttribute="trailing" id="8Wt-ih-Cs2"/>
                         <constraint firstItem="O7t-AO-BsM" firstAttribute="leading" secondItem="x3h-Y2-hLM" secondAttribute="leading" constant="30" id="Bfi-lj-Rz7"/>
-                        <constraint firstItem="OzH-ff-rYM" firstAttribute="top" secondItem="EfC-OE-g2N" secondAttribute="top" constant="15" id="H6a-Ul-biN"/>
+                        <constraint firstItem="O7t-AO-BsM" firstAttribute="top" secondItem="x3h-Y2-hLM" secondAttribute="top" constant="55" id="HbS-wG-M43"/>
                         <constraint firstAttribute="trailing" secondItem="O7t-AO-BsM" secondAttribute="trailing" constant="30" id="KZN-xH-n9X"/>
-                        <constraint firstItem="TzJ-Rv-nqw" firstAttribute="top" secondItem="O7t-AO-BsM" secondAttribute="bottom" constant="20" id="MYM-rn-8UW"/>
-                        <constraint firstItem="OzH-ff-rYM" firstAttribute="leading" secondItem="EfC-OE-g2N" secondAttribute="leading" constant="15" id="N7Y-Ee-HBc"/>
-                        <constraint firstItem="O7t-AO-BsM" firstAttribute="top" secondItem="EfC-OE-g2N" secondAttribute="bottom" constant="20" id="VKL-4c-PLO"/>
-                        <constraint firstItem="EfC-OE-g2N" firstAttribute="centerX" secondItem="x3h-Y2-hLM" secondAttribute="centerX" id="iU0-BO-EfB"/>
-                        <constraint firstItem="EfC-OE-g2N" firstAttribute="top" secondItem="x3h-Y2-hLM" secondAttribute="top" constant="-65" id="qEs-D0-ggd"/>
+                        <constraint firstItem="TzJ-Rv-nqw" firstAttribute="top" secondItem="O7t-AO-BsM" secondAttribute="bottom" constant="25" id="MYM-rn-8UW"/>
                         <constraint firstItem="TzJ-Rv-nqw" firstAttribute="leading" secondItem="O7t-AO-BsM" secondAttribute="leading" id="rlW-1p-LDm"/>
-                        <constraint firstItem="OzH-ff-rYM" firstAttribute="trailing" secondItem="EfC-OE-g2N" secondAttribute="trailing" constant="-15" id="v4E-bT-0EF"/>
-                        <constraint firstItem="OzH-ff-rYM" firstAttribute="bottom" secondItem="EfC-OE-g2N" secondAttribute="bottom" constant="-15" id="yUp-CP-0gH"/>
                     </constraints>
                 </view>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXK-eq-3vR" customClass="PMSuperButton" customModule="StudyCool" customModuleProvider="target">
-                    <rect key="frame" x="60" y="625.5" width="294" height="50"/>
+                    <rect key="frame" x="60" y="595.5" width="294" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="ebc-xt-2dA"/>
@@ -111,11 +95,11 @@
                 <constraint firstItem="gXK-eq-3vR" firstAttribute="trailing" secondItem="x3h-Y2-hLM" secondAttribute="trailing" id="aiu-Te-Xls"/>
                 <constraint firstItem="r0X-DP-cHW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="avv-aD-xVq"/>
                 <constraint firstItem="gXK-eq-3vR" firstAttribute="leading" secondItem="x3h-Y2-hLM" secondAttribute="leading" id="qPt-OY-awj"/>
-                <constraint firstItem="gXK-eq-3vR" firstAttribute="top" secondItem="x3h-Y2-hLM" secondAttribute="bottom" constant="25" id="uUY-Xa-rKp"/>
+                <constraint firstItem="gXK-eq-3vR" firstAttribute="top" secondItem="x3h-Y2-hLM" secondAttribute="bottom" constant="60" id="uUY-Xa-rKp"/>
                 <constraint firstItem="r0X-DP-cHW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uag-8l-nde"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x3h-Y2-hLM" secondAttribute="trailing" constant="60" id="ybx-Vf-vO2"/>
                 <constraint firstItem="x3h-Y2-hLM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="z8r-cQ-ZBt"/>
-                <constraint firstItem="x3h-Y2-hLM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="5" id="zTx-s7-K4T"/>
+                <constraint firstItem="x3h-Y2-hLM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="zTx-s7-K4T"/>
             </constraints>
             <point key="canvasLocation" x="128.98550724637681" y="114.50892857142857"/>
         </view>
@@ -126,9 +110,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="bg_avatar" width="210" height="210"/>
         <image name="bg_profile" width="256" height="554.5"/>
-        <image name="icon_avt" width="120" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

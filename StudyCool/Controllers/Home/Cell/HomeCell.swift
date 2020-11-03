@@ -13,7 +13,7 @@ protocol HomeCellDelegate: class {
 }
 
 class HomeCell: UITableViewCell {
-
+    @IBOutlet weak var vBG: UIView!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     
@@ -28,6 +28,13 @@ class HomeCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        vBG.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        vBG.layer.cornerRadius = 10
+        vBG.setShadow(color: #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1), opacity: 0.2, offSet: CGSize(width: 0, height: 0), radius: 3)
     }
     
     @IBAction func onPressTraing(_ sender: UIButton) {

@@ -116,10 +116,10 @@ class TrainingViewController: BaseViewController {
                     self.vSuccess.isHidden = false
                     // TODO: Check Wrong or Right
                     if let answer = self.vListern.txfAnswer.text, words![currentIndexWord].word.lowercased() == answer.lowercased() {
-                        self.vSuccess.vBG.backgroundColor = .green
+                        self.vSuccess.vBG.backgroundColor = UIColor(rgb: 0x00924C)
                         self.words![currentIndexWord].listened = true
                     } else {
-                        self.vSuccess.vBG.backgroundColor = .red
+                        self.vSuccess.vBG.backgroundColor = UIColor(rgb: 0xA3211E)
                     }
                 } else {
                     self.vSuccess.isHidden = true
@@ -131,10 +131,10 @@ class TrainingViewController: BaseViewController {
                     self.vSuccess.isHidden = false
                     // TODO: Check Wrong or Right
                     if  self.vWrite.wordAnwers.compactMap({ $0.text }).joined().lowercased() == words![currentIndexWord].word.lowercased() {
-                        self.vSuccess.vBG.backgroundColor = .green
+                        self.vSuccess.vBG.backgroundColor = UIColor(rgb: 0x00924C)
                         self.words![currentIndexWord].writen = true
                     } else {
-                        self.vSuccess.vBG.backgroundColor = .red
+                        self.vSuccess.vBG.backgroundColor = UIColor(rgb: 0xA3211E)
                     }
                 } else {
                     self.vSuccess.isHidden = true

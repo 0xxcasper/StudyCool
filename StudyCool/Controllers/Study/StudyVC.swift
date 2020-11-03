@@ -21,6 +21,11 @@ class StudyVC: BaseViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+    }
 }
 
 extension StudyVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -39,11 +44,11 @@ extension StudyVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (self.view.frame.size.width - 16*3)/2
-        return CGSize(width: width, height: width + 20)
+        return CGSize(width: width, height: width + 24)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        return UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
