@@ -44,9 +44,9 @@ class TrainingViewController: BaseViewController {
         JsonHelper.mapJSONFileWithLocalOrFirebase(fileName: fileName, type: typeTopic, { [weak self] Words in
             guard let strSelf = self else { return }
             if let words = Words {
-                let tenWord = words.prefix(3) // Remove me later
-                strSelf.words = Array(tenWord) // Remove me later
-//                strSelf.words = words
+//                let tenWord = words.prefix(3) // Remove me later
+//                strSelf.words = Array(tenWord) // Remove me later
+                strSelf.words = words
                 strSelf.vLearn.word = words[strSelf.currentIndexWord]
                 strSelf.vSuccess.word = words[strSelf.currentIndexWord]
             } else {
